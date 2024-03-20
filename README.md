@@ -1,2 +1,2 @@
-# paper-individualismo
-Paper creado a partir de mi tesis de magisterio
+# Relación entre perfiles de individualismo y apoyo a líderes fuertes en Chile
+Paper creado a partir de mi tesis de magister. Gabriel Cortés Paredes
