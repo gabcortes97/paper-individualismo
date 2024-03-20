@@ -6,8 +6,8 @@ bookdown::gitbook:
       before: |
         <li><a href="https://github.com/gabcortes97">Gabriel Cortés Paredes</a></li>
       after: |
-        <li><a href="https://github.com/gabcortes97/PERFILES_INDIVIDUALISMO" target="blank">Publicado con bookdown</a></li>
-    edit: https://github.com/gabcortes97/PERFILES_INDIVIDUALISMO/edit/main/%s
+        <li><a href="https://gabcortes97.github.io/paper-individualismo/" target="blank">Publicado con bookdown</a></li>
+    edit: https://github.com/gabcortes97/paper-individualismo/blob/main/%s
     sharing:
       github: yes
       facebook: no
