@@ -26,6 +26,6 @@ Esta investigación buscó explorar las consecuencias políticas, sociales y eco
 
  Mediante un análisis de varianza y una regresión logística, se observó que estos perfiles de individualismo presentan diferencias significativas en su nivel de apoyo a un líder fuerte. Mientras que el Individualismo Estratégico y el Autoritario muestran una relación positiva con este tipo de liderazgo, el Individualismo Conservador y el Liberal tienden a relacionarse negativamente.
 
- Los resultados sugieren que la relación entre el individualismo y el apoyo a un líder fuere es significativa, pero divergente entre distintos grupos. Esto ilustra un panorama general en el que las manifestaciones del individualismo, y su relación con otros fenómenos, aparecen como más complejas de lo que otros estudios han propuesto.
+ Los resultados sugieren que la relación entre el individualismo y el apoyo a un líder fuerte es significativa, pero divergente entre distintos grupos. Esto ilustra un panorama general en el que las manifestaciones del individualismo, y su relación con otros fenómenos, aparecen como más complejas de lo que otros estudios han propuesto.
  
  **Conceptos Claves:** Individualismo -- Apoyo a lideres fuertes -- Individualización -- Análisis de Clases Latentes
