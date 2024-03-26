@@ -369,7 +369,7 @@ datos$clase <- factor(datos$clase, levels = c(1,2,3,4),
                       labels = c("Individualismo Autoritario",
                                  "Individualismo Conservador",
                                  "Individualismo Liberal",
-                                 "Individualismo Agéntico"))
+                                 "Individualismo Estratégico"))
 
 datos %>% filter(Q222!=is.na(Q222)) %>%
   group_by(clase, Q222) %>% summarise(prop=n()) %>%
