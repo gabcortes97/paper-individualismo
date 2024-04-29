@@ -103,12 +103,10 @@
 % This gives us rules below the headers
 \AtBeginDocument{%
   \fancyhf{}
+  \renewcommand{\headrulewidth}{0pt}
 %  \fancyhead[RE]{\slshape \leftmark}
 %  \fancyhead[LO]{\slshape \rightmark}
 %	The above makes your headers in all caps. If you would like different headers, choose one of the following options (be sure to remove the % symbol from both the right and left headers):
-	 \fancyhead[RE]{\slshape \nouppercase \leftmark} % This makes the headers on the RIGHT side pages be italic and use lowercase With Capitals When Specified.
-	\fancyhead[LO]{\slshape \nouppercase \rightmark} % This does the same thing to the LEFT side pages
-	\renewcommand{\chaptermark}[1]{\markboth{#1}{}}
 %	or
 %	\fancyhead[RE]{\scshape \leftmark} % The RIGHT headers will be in small caps.
 %	\fancyhead[LO]{\scshape \rightmark} %  And so will the LEFT headers
@@ -133,13 +131,6 @@
 }
 
 % Stolen from book.cls and modified
-\let\RToldchapter\chapter
-\renewcommand{\chapter}{\if@openright\RTcleardoublepage
-		    \else\clearpage\fi
-		    \thispagestyle{plain}%
-		    \global\@topnum\z@
-		    \@afterindentfalse
-		    \secdef\@chapter\@schapter}
 
 % Stolen from book.cls PBC 5/12/05
 % Using this to actually show "Chapter 1" in TOC instead of "1"
@@ -296,11 +287,10 @@
   \let\footnoterule\relax
   \let \footnote \thanks
 
-  \baselineskip = 1.4\baselineskip
+  \baselineskip = 1\baselineskip
   \setbox0=\hbox{of the Requirements for the Degree}
 
   \begin{center}
-   \includegraphics[scale=1]{images/udp.png}
     \setcounter{page}{1}
     \null\vfil
     \begin{Large}

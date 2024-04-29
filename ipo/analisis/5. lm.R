@@ -1,4 +1,5 @@
 library(tidyverse)
+library(performance)
 
 # Cargar datos
 datos <- readRDS("ipo/input/Datos/data.rds")
@@ -83,14 +84,18 @@ datos$clase <- relevel(datos$clase, ref = "Individualismo Conservador")
 m4 <- glm(lider_recod ~ clase + genero + Q262 + id_pol + Q288 + religion + tipo_ciudad + trabajo, data=datos, family = "binomial")
 summary(m4) # Modelo completo
 
+r2_tjur(m4)
+
 m4a <- glm(lider_recod ~ clase, data=datos, family = "binomial")
 summary(m4a) #Modelo solo con individualismo
+
+r2_tjur(m4a)
 
 
 m4b <- glm(lider_recod ~genero + Q262 + id_pol + Q288 + religion + tipo_ciudad + trabajo, data=datos, family = "binomial")
 summary(m4b) # Modelo sin individualismo
 
-
+r2_tjur(m4b)
 saveRDS(datos, "ipo/input/Datos/datosLM.rds")
 saveRDS(m4, "ipo/output/m4.rds")
 saveRDS(m4a, "ipo/output/m4a.rds")

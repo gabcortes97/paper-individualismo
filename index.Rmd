@@ -2,25 +2,22 @@
 title: 'PERFILES DE INDIVIDUALISMO Y SU RELACIÓN CON EL APOYO A UN LÍDER FUERTE EN LA SOCIEDAD CHILENA'
 subtitle:
 author: "GABRIEL CORTÉS PAREDES"
-date: "Santiago de Chile, 2023"
-institution: "FACULTAD DE CIENCIAS SOCIALES E HISTORIA"
-degree: "Tesis para optar al grado de magíster en Métodos para la Investigación Social"
-advisor: "Profesora guía: Macarena Orchard"
+date: "2024"
+degree: "Borrador artículo"
 bibliography: [tesis.bib]
 csl: apa.csl
 link-citations: yes
 fontsize: 12pt
-lof: true
-lot: True
-linespread: 1
+lof: false
+lot: false
+toc: false
 site: bookdown::bookdown_site
 output: bookdown::gitbook
 documentclass: book
 ---
-
 # Abstract {-}
 
-Esta investigación buscó explorar las consecuencias políticas, sociales y económicas derivadas de la relación entre el individualismo y las preferencias políticas. En concreto, se propuso establecer cómo el apoyo a un líder fuerte se relaciona con los diferentes perfiles de individualismo en la sociedad chilena. Aquí, el individualismo se conceptualiza no a partir de las definiciones tradicionales de la psicología cultural, sino como un producto de procesos sociohistóricos de individualización, que varían no solo entre culturas sino también dentro de una misma sociedad.
+Esta investigación buscó explorar las consecuencias políticas, sociales y económicas derivadas de la relación entre el individualismo y las preferencias políticas. En concreto, se propuso establecer cómo el apoyo a un líder fuerte se relaciona con los diferentes perfiles de individualismo en la sociedad chilena. Aquí, el individualismo se conceptualiza no a partir de las definiciones tradicionales de la psicología cultural, sino como un producto de procesos sociohistóricos de individuación, que varían no solo entre culturas sino también dentro de una misma sociedad.
 
  Utilizando datos secundarios de la 7ma Ola de la Encuesta Mundial de Valores en Chile (2018), se llevó a cabo un Análisis de Clases Latentes. Este análisis reveló cuatro perfiles distintos de individualismo: Individualismo Autoritario, Individualismo Conservador, Individualismo Liberal e Individualismo Estratégico. 
 
@@ -28,4 +25,4 @@ Esta investigación buscó explorar las consecuencias políticas, sociales y eco
 
  Los resultados sugieren que la relación entre el individualismo y el apoyo a un líder fuerte es significativa, pero divergente entre distintos grupos. Esto ilustra un panorama general en el que las manifestaciones del individualismo, y su relación con otros fenómenos, aparecen como más complejas de lo que otros estudios han propuesto.
  
- **Conceptos Claves:** Individualismo -- Apoyo a lideres fuertes -- Individualización -- Análisis de Clases Latentes
+ **Conceptos Claves:** Individualismo -- Apoyo a líderes fuertes -- Individualización -- Análisis de Clases Latentes
