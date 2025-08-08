@@ -1,0 +1,50 @@
+---
+title: "Perfiles de Individualismo en la sociedad chilena"
+format:
+  html:
+    theme: cosmo
+  pdf:
+    documentclass: scrartcl
+    keep-tex: true
+    fig-pos: H
+author:
+  - name: Gabriel Cortés Paredes
+    email: gabriel.cortes@uchile.cl
+    orcid: 0009-0003-4064-2737
+    affiliations:
+      - ref: 1
+    attributes:
+      corresponding: true
+affiliations: 
+  - id: 1
+    name: Observatorio de Cohesión Social, COES. 
+abstract: |
+ Escribir
+
+keywords: 
+  - Individualismo
+  - Individuación
+  - Análisis de clases latentes
+link-citations: true
+linestretch: 1.15       
+# mainfont: Times New Roman
+# fontsize: 12pt          
+geometry: "left=2.54cm,right=2.54cm,top=2.54cm,bottom=2.54cm"
+papersize: letter
+colorlinks: true
+lang: es
+bibliography: "tesis.bib"
+---
+
+{{< include secciones/01-intro.qmd >}}
+
+{{< include secciones/02-antecedentes.qmd >}}
+
+{{< include secciones/03-metod.qmd >}}
+
+<!-- {{< include secciones/04-analisis.qmd >}} -->
+
+{{< include secciones/05-discusion.qmd >}}
+
+{{< include secciones/06-conclusion.qmd >}}
+
