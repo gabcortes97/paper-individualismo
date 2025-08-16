@@ -38,9 +38,9 @@ bibliography: "input/bib/tesis.bib"
 
 {{< include secciones/01-intro.qmd >}}
 
-<!-- {{< include secciones/02-antecedentes.qmd >}}
+{{< include secciones/02-antecedentes.qmd >}}
 
-{{< include secciones/03-metod.qmd >}} -->
+<!-- {{< include secciones/03-metod.qmd >}} -->
 
 <!-- {{< include secciones/04-analisis.qmd >}} -->
 

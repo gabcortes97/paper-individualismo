@@ -5,5 +5,8 @@
   "paper.qmd": {
     "paper.html": "43bab8f2",
     "paper.tex": "3c43676f"
+  },
+  "secciones/02-antecedentes.qmd": {
+    "02-antecedentes.html": "043b27b7"
   }
 }
