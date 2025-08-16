@@ -33,18 +33,18 @@ geometry: "left=2.54cm,right=2.54cm,top=2.54cm,bottom=2.54cm"
 papersize: letter
 colorlinks: true
 lang: es
-bibliography: "tesis.bib"
+bibliography: "input/bib/tesis.bib"
 ---
 
 {{< include secciones/01-intro.qmd >}}
 
-{{< include secciones/02-antecedentes.qmd >}}
+<!-- {{< include secciones/02-antecedentes.qmd >}}
 
-{{< include secciones/03-metod.qmd >}}
+{{< include secciones/03-metod.qmd >}} -->
 
 <!-- {{< include secciones/04-analisis.qmd >}} -->
 
-{{< include secciones/05-discusion.qmd >}}
+<!-- {{< include secciones/05-discusion.qmd >}}
 
-{{< include secciones/06-conclusion.qmd >}}
+{{< include secciones/06-conclusion.qmd >}} -->
 
