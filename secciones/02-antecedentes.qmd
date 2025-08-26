@@ -45,3 +45,7 @@ Por último, la tercera dimensión del individualismo se refiere a la importanci
 Sin embargo, también se han planteado visiones críticas a esta concepción, particularmente desde América Latina [@araujo2012; @robles2001]. No toda individuación sería reflexiva, ya que muchos individuos podrían experimentarla de forma delegativa, como una imposición [@silvapalacios2015]; no como un mundo de posibilidades, sino como uno lleno de incertidumbres. Los individuos, de tal modo, deben enfrentar las inseguridades ontológicas de la vida social a partir de sus propias habilidades bajo el imperativo de “arréglatelas como puedas” [@araujo2014; @robles2001]. Frente a esto, la valorización de la autonomía se desplaza por la búsqueda de seguridad como valor principal de esta forma de individuación [@silvapalacios2015].
 
 La hipótesis de esta investigación es que en la sociedad chilena ha predominado una individuación delegativa que enfatiza valores como la seguridad por sobre la autonomía. No obstante, es posible que en grupos con mayores niveles de bienestar o estatus socioeconómico predomine una individuación reflexiva que enfatice la autonomía.  
+
+La propuesta conceptual planteada en esta sección se resume en el @fig-esquema.
+
+![Esquema conceptual propuesto](input/images/esquema-conceptual.png){#fig-esquema width=60%}
