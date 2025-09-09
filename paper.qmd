@@ -3,6 +3,11 @@ title: "Perfiles de Individualismo en la sociedad chilena"
 format:
   html:
     theme: cosmo
+  pdf:
+     pdf-engine: xelatex
+     keep-tex: true
+     fig-pos: H
+     mainfont: "TeX Gyre Termes"
 author:
   - name: Gabriel Cortés Paredes
     email: gabriel.cortes@uchile.cl
@@ -39,29 +44,23 @@ execute:
 ```{r}
 #| echo: false 
 
+library(pacman)
+p_load(tidyverse,
+       knitr,
+       kableExtra,
+       stargazer,
+       broom,
+       stringr)
+
+
+# Función para crear tablas word
 is_word_output <- function() {
-  if (knitr::is_html_output()) {
+  if (knitr::is_latex_output()) {
     return(FALSE)
   } else {
     return(TRUE)
   }
 }
-
-library(pacman)
-p_load(tidyverse,
-       knitr,
-       kableExtra,
-       flextable)
-
-
-# # Función para crear tablas word
-# is_word_output <- function() {
-#   if (knitr::is_latex_output()) {
-#     return(FALSE)
-#   } else {
-#     return(TRUE)
-#   }
-# }
 ```
 
 
@@ -71,7 +70,7 @@ p_load(tidyverse,
 
 {{< include secciones/03-metod.qmd >}}
 
-<!-- {{< include secciones/04-analisis.qmd >}} -->
+{{< include secciones/04-analisis.qmd >}}
 
 <!-- {{< include secciones/05-discusion.qmd >}}
 

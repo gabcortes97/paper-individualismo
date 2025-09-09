@@ -9,7 +9,7 @@ library(purrr)
 
 # Cargar base de datos
 
-df <- readRDS("ipo/input/Datos/df.rds")
+df <- readRDS("input/data/df.rds")
 
 # Subset y recodicación
 

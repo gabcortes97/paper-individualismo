@@ -23,6 +23,7 @@
 \usepackage{lmodern}
 \ifPDFTeX\else  
     % xetex/luatex font selection
+    \setmainfont[]{TeX Gyre Termes}
 \fi
 % Use upquote if available, for straight quotes in verbatim environments
 \IfFileExists{upquote.sty}{\usepackage{upquote}}{}
@@ -129,6 +130,20 @@
 \newcommand{\CSLRightInline}[1]{\parbox[t]{\linewidth - \csllabelwidth}{\strut#1\strut}}
 \newcommand{\CSLIndent}[1]{\hspace{\cslhangindent}#1}
 
+\usepackage{booktabs}
+\usepackage{longtable}
+\usepackage{array}
+\usepackage{multirow}
+\usepackage{wrapfig}
+\usepackage{float}
+\usepackage{colortbl}
+\usepackage{pdflscape}
+\usepackage{tabu}
+\usepackage{threeparttable}
+\usepackage{threeparttablex}
+\usepackage[normalem]{ulem}
+\usepackage{makecell}
+\usepackage{xcolor}
 \KOMAoption{captions}{tableheading}
 \makeatletter
 \@ifpackageloaded{caption}{}{\usepackage{caption}}
@@ -178,6 +193,10 @@
 \usepackage[bidi=default]{babel}
 \fi
 \babelprovide[main,import]{spanish}
+\ifPDFTeX
+\else
+\babelfont{rm}[]{TeX Gyre Termes}
+\fi
 % get rid of language-specific shorthands (see #6817):
 \let\LanguageShortHands\languageshorthands
 \def\languageshorthands#1{}
@@ -608,7 +627,8 @@ niveles. La muestra es representativa a nivel nacional, así como de
 Se entenderá al individualismo como una variable latente y categórica,
 construida de manera inductiva a partir de un conjunto de indicadores
 operacionalizados en base de las definiciones teóricas previamente
-expuestas.
+expuestas. La Tabla~\ref{tbl-indicadores} presenta un resumen de los
+indicadores seleccionados.
 
 \subsubsection{Legitimidad de la acción
 individual}\label{legitimidad-de-la-acciuxf3n-individual-1}
@@ -678,6 +698,240 @@ importante?} Este indicador proporciona una forma sencilla de determinar
 si la autonomía es el valor principal para los individuos o si ve
 desplazada por el deseo de seguridad.
 
+\begingroup\fontsize{10}{12}\selectfont
+
+\begin{longtable}[t]{>{\raggedright\arraybackslash}p{3cm}>{\raggedright\arraybackslash}p{8cm}>{\raggedright\arraybackslash}p{3cm}}
+
+\caption{\label{tbl-indicadores}Descripción indicadores}
+
+\tabularnewline
+
+\toprule
+\multicolumn{1}{c}{Dimensión} & \multicolumn{1}{c}{Indicadores} & \multicolumn{1}{c}{Recodificación}\\
+\midrule
+\addlinespace[0.3em]
+\multicolumn{3}{l}{\textbf{Legitimidad de la individualidad}}\\
+ &  & 1. Alta acuerdo\\
+\cmidrule{3-3}\nopagebreak
+ & \multirow{-2}{8cm}{\raggedright\arraybackslash La competencia es buena o perjudicial} & 2. Baja acuerdo\\
+\cmidrule{2-3}\nopagebreak
+ &  & 1. Alta justificación\\
+\cmidrule{3-3}\nopagebreak
+ & \multirow{-2}{8cm}{\raggedright\arraybackslash Evitar el pago de pasaje en el transporte público} & 2. Baja justificación\\
+\cmidrule{2-3}\nopagebreak
+ &  & 1. Alta justificación\\
+\cmidrule{3-3}\nopagebreak
+\multirow{-6}{3cm}[1\dimexpr\aboverulesep+\belowrulesep+\cmidrulewidth]{\raggedright\arraybackslash Legitimidad individualismo utilitario} & \multirow{-2}{8cm}{\raggedright\arraybackslash Exigir beneficios del gobierno a los que no se tiene derecho} & 2. Baja justificación\\
+\cmidrule{1-3}\pagebreak[0]
+ &  & 1. Alta importancia\\
+\cmidrule{3-3}\nopagebreak
+ & \multirow{-2}{8cm}{\raggedright\arraybackslash El Estado hace que los ingresos de las personas sean iguales} & 2. Baja importancia\\
+\cmidrule{2-3}\nopagebreak
+ &  & 1. Alta importancia\\
+\cmidrule{3-3}\nopagebreak
+ & \multirow{-2}{8cm}{\raggedright\arraybackslash Las mujeres tienen los mismos derechos que los hombre} & 2. Baja importancia\\
+\cmidrule{2-3}\nopagebreak
+ &  & 1. Alta importancia\\
+\cmidrule{3-3}\nopagebreak
+\multirow{-6}{3cm}[1\dimexpr\aboverulesep+\belowrulesep+\cmidrulewidth]{\raggedright\arraybackslash Legitimidad individualismo moral} & \multirow{-2}{8cm}{\raggedright\arraybackslash Los derechos civiles protegen la libertad de la gente contra la opresión del Estado} & 2. Baja importancia\\
+\cmidrule{1-3}\pagebreak[0]
+ &  & 1. Alta justificación\\
+\cmidrule{3-3}\nopagebreak
+ & \multirow{-2}{8cm}{\raggedright\arraybackslash La homosexualidad} & 2. Baja justificación\\
+\cmidrule{2-3}\nopagebreak
+ &  & 1. Alta justificación\\
+\cmidrule{3-3}\nopagebreak
+ & \multirow{-2}{8cm}{\raggedright\arraybackslash El divorcio} & 2. Baja justificación\\
+\cmidrule{2-3}\nopagebreak
+ &  & 1. Alta justificación\\
+\cmidrule{3-3}\nopagebreak
+\multirow{-6}{3cm}[1\dimexpr\aboverulesep+\belowrulesep+\cmidrulewidth]{\raggedright\arraybackslash Legitimidad individualismo expresivo} & \multirow{-2}{8cm}{\raggedright\arraybackslash Tener relaciones sexuales antes del matrimonio} & 2. Baja justificación\\
+\cmidrule{1-3}\pagebreak[0]
+\addlinespace[0.3em]
+\multicolumn{3}{l}{\textbf{Concepciones del Individuo}}\\
+ &  & 1. Un gran control\\
+\cmidrule{3-3}\nopagebreak
+\multirow{-2}{3cm}{\raggedright\arraybackslash Concepción Independiente} & \multirow{-2}{8cm}{\raggedright\arraybackslash ¿Cuánta libertad de elegir y de control siente usted que tiene sobre la forma en que le resulta su vida?} & 2. Nada de control\\
+\cmidrule{1-3}\pagebreak[0]
+ &  & 1. Muy de acuerdo\\
+\cmidrule{3-3}\nopagebreak
+ &  & 2. De acuerdo\\
+\cmidrule{3-3}\nopagebreak
+ &  & 3. En desacuerdo\\
+\cmidrule{3-3}\nopagebreak
+\multirow{-4}{3cm}{\raggedright\arraybackslash Concepción Relacional} & \multirow{-4}{8cm}{\raggedright\arraybackslash Una de mis metas en la vida ha sido que mis padres estén orgullosos de mi} & 4. Muy en desacuerdo\\
+\cmidrule{1-3}\pagebreak[0]
+ &  & 1. Muy cercano\\
+\cmidrule{3-3}\nopagebreak
+ &  & 2. Cercano\\
+\cmidrule{3-3}\nopagebreak
+ &  & 3. Poco cercano\\
+\cmidrule{3-3}\nopagebreak
+\multirow{-4}{3cm}{\raggedright\arraybackslash Concepción Colectiva} & \multirow{-4}{8cm}{\raggedright\arraybackslash Cercanía con Chile} & 4. Nada cercano\\
+\cmidrule{1-3}\pagebreak[0]
+\addlinespace[0.3em]
+\multicolumn{3}{l}{\textbf{Valores e imperativos}}\\
+ &  & 1. La Libertad\\
+\cmidrule{3-3}\nopagebreak
+\multirow{-2}{3cm}{\raggedright\arraybackslash Valor principal} & \multirow{-2}{8cm}{\raggedright\arraybackslash Considera más importante} & 2. La seguridad\\
+\bottomrule
+
+\end{longtable}
+
+\endgroup{}
+
+\subsubsection{Variables
+sociodemográficas}\label{variables-sociodemogruxe1ficas}
+
+Se incluirán indicadores sociodemográficos tales como posición política,
+sexo, edad e identificación religiosa con el objetivo de observar si
+existen diferencias en la composición de los perfiles de individualismo
+identificados.
+
+\subsection{Método}\label{muxe9todo}
+
+Se empleó un análisis de clases latentes (LCA) para identificar los
+perfiles de individualismo en la sociedad chilena. El LCA es un modeleo
+de variables latentes categóricas, lo que permite identificar
+diferencias cualitativas y principios de organización dentro de la
+población (\citeproc{ref-collins2010}{Collins y Lanza 2010}).
+
+En contraste a las técnicas estadísticas más utilizadas, el análisis de
+clases latente se suele considerar como una \emph{aproximación orientada
+a la persona} (\citeproc{ref-collins2010}{Collins y Lanza 2010}). Etsta
+forma de abordar el análsisis estadístico se diferencia en que no busca
+establecer relaciones entre variables, sino que tiene como objetivo
+producir resultados interpretables a nivel del inviduo, brindando
+información sobre los patrones generales y el comportamiento de las
+personas (\citeproc{ref-bergman2015}{Bergman y Lundh 2015}). De tal
+modo, el LCA ofrece la oportunidad de llevar a cabo una sociología a
+nivel del individuo, posibilitando mapear los procesos estructurales de
+individuación en Chile. Esto permitiría obtener una versión menos
+unívoca del individualismo chileno, desarrollando una tipología que
+identifique divergencias y difracciones de este fenómeno en la sociedad
+chilena.
+
+El análisis se realizó utilizando el paquete \textbf{poLCA}
+(\textbf{po}lytomous Variable \emph{L}atent \emph{C}lass
+\emph{A}nalysis) en R. Este paquete permite especificar modelos de
+clases latentes de manera eficiente con solo unas pocas líneas de código
+y proporciona información valiosa sobre el tamaño de cada clase latente,
+las probabilidades posteriores de membresía y criterios para evaluar el
+ajuste del modelo (\citeproc{ref-linzer2011}{Linzer y Lewis 2011}).
+
+La selección del modelo se realizó a partir de la evaluación del ajuste
+estadístico de modelos con distintos números de clase mediante el
+Criterio de Información Akaike (AIC) y el Criterio de Información
+Bayesiano (BIC), adeemás de criterios de interpretabilidad teórica. AIC
+y BIC son dos indicadores de ajuste relativo que permiten la comparación
+de modelos. Un valor más bajo en estos indicadores indica un mejor
+ajuste, lo que representa un equilibrio óptimo entre la complejidad y la
+parsimonia dle modelo (\citeproc{ref-collins2010}{Collins y Lanza
+2010}).
+
+\section*{Resultados}\label{resultados}
+\addcontentsline{toc}{section}{Resultados}
+
+\subsection*{Análisis Descriptivo}\label{anuxe1lisis-descriptivo}
+\addcontentsline{toc}{subsection}{Análisis Descriptivo}
+
+En la Figura~\ref{fig-descriptivos} se presenta la distribución de los
+indicadores de individualismo para el total de la muestra. Se destaca
+una alta valoración de la competencia (70\%), pero un amplio rechazo al
+actuar estratégico cuando se trata de mentir para obtener beneficios
+sociales (63\%) o en la evasión del transporte público (80\%). Además,
+se observa una valoración moderadamente alta de los indicadores de
+individualismo moral e individualismo expresivo.
+
+\begin{figure}[H]
+
+\centering{
+
+\pandocbounded{\includegraphics[keepaspectratio]{paper_files/figure-pdf/fig-descriptivos-1.pdf}}
+
+}
+
+\caption{\label{fig-descriptivos}Análisis descriptivo indicadores de
+Individualismo}
+
+\end{figure}%
+
+El 83\% declara sentirse a cargo de su propia vida, lo que denota un
+alto nivel de autonomía en la población. Asimismo, el 84\% considera que
+hacer sentir orgullosos a sus padres es uno de los principales objetivos
+en la vida. Además, el 90\% se siente cercano o muy cercano al país. En
+conjunto, estos resultados son coherentes con la evidencia previa que
+indica que las autoconcepciones independientes e interdependientes no
+son excluyentes, sino que coexisten y alcanzan niveles igualmente altos
+en Chile (\citeproc{ref-benavides2020}{Benavides y Hur 2020};
+\citeproc{ref-kolstad2009}{Kolstad y Horpestad 2009}).
+
+Por último, una proporción importantes de la población (82\%) prioriza
+la seguridad (en rojo en la Figura~\ref{fig-descriptivos}) por sobre la
+libertad (en azul). Este hallazgo podría representar evidencia a favor
+de que la autonomía no es el valor principal en base al cual las
+personas no se constituyen como individuos en Chile
+(\citeproc{ref-martuccelli2010}{Martuccelli 2010}).
+
+\subsection{Perfiles de
+Individualismo}\label{perfiles-de-individualismo}
+
+Se seleccionó un modelo de 4 clases a partir de criterios estadísticos y
+teóricos. Como se puede ver en la la Figura~\ref{fig-lca}, las cuatros
+clases muestran patrones claramente distintos entre sí, así como
+diferencias respecto a la distribución promedio de la muestra.
+
+\begin{figure}[H]
+
+\centering{
+
+\pandocbounded{\includegraphics[keepaspectratio]{paper_files/figure-pdf/fig-lca-1.pdf}}
+
+}
+
+\caption{\label{fig-lca}Modelo de clases latentes de individualismo}
+
+\end{figure}%
+
+\subsubsection{Clase 1: Individualistas
+Autoritarios}\label{clase-1-individualistas-autoritarios}
+
+La clase 1, que representa el 29\% de la muestra, se caracteriza por
+valorar positivamente la competencia, pero a la vez tiende a rechazar la
+acción individual en diversas esferas. Por ejemplo, se observa un alto
+rechazo a evadir en el transporte público (88\%), una mayor indiferencia
+hacia los derechos civiles (83\%) y un rechazo a la homosexualidad
+(84\%). Dicho en otras palabras, la acción individual cuenta con baja
+legitimidad tanto en la esfera económica, como en la política y en la
+expresiva. Para este grupo, la individualidad debe estar subsumida al
+respeto irrestricto a las normas socailes establecidas. Asimismo, la
+probabilidad de que los miembros de esta clase prefieren la seguridad
+por sobre la libertad es la más alta entre las 4 clases, con un 73\%.
+
+Pese a esta desconfianza generalizada hacia la acción individual y la
+autonomía, este grupo igualmente muestra un porcentaje relativamente
+alto de independencia, con un 68\%. No es, pues, que se niegue la
+indivualidad, sino que se concibe que esta debe estar siempre subsumida
+al respeto irrestrico a las normas sociales establecidas. Dado que la
+conformidad es una característica fuertemente asociada a las
+personalidades autoritarias (\citeproc{ref-zakrisson2005}{Zakrisson
+2005}), se ha decidido bautizar a este perfil como
+\textbf{individualismo autoritario}.
+
+La edad promedio de este grupo es de 46,3 años, ligeramente superior al
+promedio de la muestra (44,3 años). Además, este grupo muestra una mayor
+religiosidad en términos nominales, con un 67\% de ellos identificandose
+como católicos.
+
+\subsubsection{Clase 2: Individualistas
+Conservadores}\label{clase-2-individualistas-conservadores}
+
+\subsubsection{Clase 3: Individualistas
+Liberales}\label{clase-3-individualistas-liberales}
+
+\subsubsection{Clase 4: Individualistas
+Estratégicos}\label{clase-4-individualistas-estratuxe9gicos}
+
 \phantomsection\label{refs}
 \begin{CSLReferences}{1}{0}
 \bibitem[\citeproctext]{ref-araujo2012}
@@ -707,6 +961,12 @@ in {Chile} and {South Korea}: {A Brief Report}»}. \emph{Psychological
 Reports} 123 (6): 2410-17.
 \url{https://doi.org/10.1177/0033294119868786}.
 
+\bibitem[\citeproctext]{ref-bergman2015}
+Bergman, Lars R., y Lars-Gunnar Lundh. 2015. {«Introduction: {The}
+Person-Oriented Approach: {Roots} and Roads to the Future»}.
+\emph{Journal for Person-Oriented Research} 1 (1-2): 1-6.
+\url{https://doi.org/10.17505/jpor.2015.01}.
+
 \bibitem[\citeproctext]{ref-brewer2007}
 Brewer, Marilynn B., y Ya-Ru Chen. 2007. {«Where ({Who}) {Are
 Collectives} in {Collectivism}? {Toward Conceptual Clarification} of
@@ -730,6 +990,10 @@ Castillo, Juan Carlos, Mauricio Salgado, Kevin Carrasco, y Andreas
 Laffert. 2024. {«The {Socialization} of {Meritocracy} and {Market
 Justice Preferences} at {School}»}. \emph{Societies} 14 (11): 214.
 \url{https://doi.org/10.3390/soc14110214}.
+
+\bibitem[\citeproctext]{ref-collins2010}
+Collins, Linda, y Stephanie Lanza. 2010. \emph{Latent Class and Latent
+Tansition Analysis.} Wiley.
 
 \bibitem[\citeproctext]{ref-cortesparedes_autonomia_2022}
 Cortés Paredes, Gabriel. 2022. {«Autonom{í}a En El Horizonte: Un
@@ -767,6 +1031,12 @@ Alejandra Hernández Rodríguez. 2022. {«Instituciones Informales,
 Emprendimiento y Progreso Social: Un Estudio Comparativo y
 Correlacional»}. \emph{Revista Guillermo de Ockham} 21 (1): 113-29.
 \url{https://doi.org/10.21500/22563202.5577}.
+
+\bibitem[\citeproctext]{ref-linzer2011}
+Linzer, Drew A., y Jeffrey B. Lewis. 2011. {«{poLCA}: {An R Package} for
+{Polytomous Variable Latent Class Analysis}»}. \emph{Journal of
+Statistical Software} 42 (junio): 1-29.
+\url{https://doi.org/10.18637/jss.v042.i10}.
 
 \bibitem[\citeproctext]{ref-martuccelli2010}
 Martuccelli, Danilo. 2010. \emph{{{\textquestiondown}Existen individuos
@@ -877,6 +1147,12 @@ Yopo, Martina. 2013. {«{Individualizaci{ó}n en Chile. Individuo y
 sociedad en las transformaciones culturales recientes}»}.
 \emph{Psicoperspectivas. Individuo y Sociedad} 12 (2): 4-15.
 \url{https://doi.org/10.5027/psicoperspectivas-Vol12-Issue2-fulltext-254}.
+
+\bibitem[\citeproctext]{ref-zakrisson2005}
+Zakrisson, Ingrid. 2005. {«Construction of a Short Version of the
+{Right-Wing Authoritarianism} ({RWA}) {Scale}»}. \emph{Personality and
+Individual Differences} 39 (octubre): 863-72.
+\url{https://doi.org/10.1016/j.paid.2005.02.026}.
 
 \bibitem[\citeproctext]{ref-zhai2022}
 Zhai, Yida. 2022. {«Values {Change} and {Support} for {Democracy} in
