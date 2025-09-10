@@ -4,6 +4,7 @@
 \PassOptionsToPackage{dvipsnames,svgnames,x11names}{xcolor}
 %
 \documentclass[
+  12pt,
   letterpaper,
   DIV=11,
   numbers=noendperiod]{scrartcl}
@@ -225,28 +226,29 @@ latentes},
 \begin{document}
 \maketitle
 \begin{abstract}
-Este artículo busca identificar, a partir de un modelo de clases
-latentes, los perfiles de individualismo presentes en la sociedad
-chilena. Se entiende aquí individualismo como el conjunto de
-concepciones que tratan a la persona como el responsable principal de su
-propia vida, definiendo el lugar del individuo en la sociedad. Esta
-conceptuzalización permite comprender el individualismo como un producto
-de procesos socihistóricos de individuación, que varían no solo entre
-culturas sino también dentro de una misma sociedad.
+Este artículo tiene como objetivo identificar, mediante un modelo de
+clases latentes, los perfiles de individualismo presentes en la sociedad
+chilena. El individualismo se entiende aquí como el conjunto de
+concepciones que atribuyen a la persona la responsabilidad principal
+sobre su propia vida, definiendo al mismo tiempo el lugar del individuo
+en la sociedad. Esta conceptualización permite abordar el individualismo
+como resultado de procesos sociohistóricos de individuación, los cuales
+varían no solo entre culturas, sino también al interior de una misma
+sociedad.
 
-Utilizando datos secundarios de la 7ma Ola de la Encuesta Mundial de
-Valores en Chile (2018), se llevó a cabo un Análisis de Clases Latentes.
-Este análisis reveló cuatro perfiles distintos de individualismo:
-Autoritario, Conservador, Liberal y Estratégico. Aunque los cuatro
-perfiles muestran similutdes en sus niveles de independneica e
-interdependencia, difieren fundamentalmente en las esferas donde la
-individualidad se considera legítima.
+A partir de datos secundarios de la séptima ola de la Encuesta Mundial
+de Valores en Chile (2018), se realizó un Análisis de Clases Latentes
+que reveló cuatro perfiles de individualismo: autoritario, conservador,
+liberal y estratégico. Aunque estos perfiles comparten similitudes en
+sus niveles de independencia e interdependencia, se distinguen
+fundamentalmente en las esferas donde la individualidad se considera
+legítima.
 
-Los resultados de esta investigación permiten, por un lado,
-problematizar la posibilidad de ubicar a la sociedad chilena en un
-continuo entre individualismo y colectivismo. Por otro, matiza las
-interpretaciones unívocas sobre la existencia de una forma única de
-individualismo en Chile.
+Los resultados de esta investigación permiten, por un lado, cuestionar
+la idea de que la sociedad chilena pueda ubicarse en un continuo lineal
+entre individualismo y colectivismo. Por otro, contribuyen a matizar las
+interpretaciones unívocas que suponen la existencia de una forma
+homogénea de individualismo en Chile.
 \end{abstract}
 
 
@@ -269,10 +271,10 @@ la cuestión se vuelve particularmente visible tras el ciclo abierto por
 la crisis social de 2019, las frustradas experiencias constituyentes y
 crisis sucesivas ---sanitaria, migratoria y de seguridad---, que han
 reactivado el debate sobre la calidad de los lazos cívicos, sociales y
-comunitarios en el país (\citeproc{ref-mideso_informe_2020}{Ministerio
-de Desarrollo Social y Familia 2020};
-\citeproc{ref-castillo_cohesion_2022}{Castillo, Espinoza, y Barozet
-2022}; \citeproc{ref-salazar-xirinachs_repensar_2023}{Salazar-Xirinachs
+comunitarios en el país (\citeproc{ref-castillo_cohesion_2022}{Castillo
+et~al., 2022}; \citeproc{ref-mideso_informe_2020}{Ministerio de
+Desarrollo Social y Familia, 2020};
+\citeproc{ref-salazar-xirinachs_repensar_2023}{Salazar-Xirinachs,
 2023}).
 
 Chile se ha caracterizado por el avance de reformas neoliberales
@@ -282,15 +284,15 @@ económico e instalaron un discurso hegemónico que enfatiza el esfuerzo
 personal, la competencia y la meritocracia como vías legítimas de logro.
 Políticas públicas en educación, salud y bienestar reforzaron la
 responsabilidad individual, favoreciendo subjetividades centradas en la
-agencia personal (\citeproc{ref-araujo2012}{Araujo y Martuccelli 2012}),
-legitimando desigualdades económicas
-(\citeproc{ref-castillo_socialization_2024}{Castillo et~al. 2024}),
-favoreciendo el actuar estratégico (\citeproc{ref-araujo2014}{Araujo y
-Martuccelli 2014}) y, eventualmente, inhibiendo el cambio político
-(\citeproc{ref-pnud2024}{PNUD 2024}).
+agencia personal (\citeproc{ref-araujo2012}{Araujo \& Martuccelli,
+2012}), legitimando desigualdades económicas
+(\citeproc{ref-castillo_socialization_2024}{Castillo et~al., 2024}),
+favoreciendo el actuar estratégico (\citeproc{ref-araujo2014}{Araujo \&
+Martuccelli, 2014}) y, eventualmente, inhibiendo el cambio político
+(\citeproc{ref-pnud2024}{PNUD, 2024}).
 
 Desde esta perspectiva, la presencia de un~\emph{individualismo asocial}
-(\citeproc{ref-pnud2024}{PNUD 2024}) operaría como fuerza disgregadora
+(\citeproc{ref-pnud2024}{PNUD, 2024}) operaría como fuerza disgregadora
 de lazos sociales y ciudadanos, configurándose como un desafío para la
 mantención de la cohesión social en Chile. En este contexto, este
 artículo busca aportar a la discusión empírica identificando los
@@ -302,12 +304,12 @@ cultural, especialmente a partir del enfoque popularizado por Geert
 Hofstede en los años ochenta. En su formulación, el individualismo y el
 colectivismo constituyen polos de un continuo unidimensional que
 permitiría distinguir entre culturas individualistas y colectivistas
-(\citeproc{ref-oyserman2002}{Oyserman, Coon, y Kemmelmeier 2002};
-\citeproc{ref-yoon2010}{Yoon 2010}). Las primeras se caracterizan por
+(\citeproc{ref-oyserman2002}{Oyserman et~al., 2002};
+\citeproc{ref-yoon2010}{Yoon, 2010}). Las primeras se caracterizan por
 lazos poco estrechos y expectativas de autosuficiencia individual y
 familiar; las segundas, por la integración temprana en grupos
 cohesionados que brindan protección a cambio de lealtad
-(\citeproc{ref-yoon2010}{Yoon 2010}).
+(\citeproc{ref-yoon2010}{Yoon, 2010}).
 
 El fenómeno del individualismo ha sido abordado principalmente desde la
 psicología cultural, particularmente desde el enfoque popularizado por
@@ -315,62 +317,61 @@ Geert Hofstede en la década de 1980. Para Hofstede, el individualismo es
 el polo de un espectro continuo y unidimensional que tiene en su otro
 extremo al colectivismo. De tal modo, sería posible distinguir entre
 culturas individualistas y culturas colectivistas
-(\citeproc{ref-oyserman2002}{Oyserman, Coon, y Kemmelmeier 2002};
-\citeproc{ref-yoon2010}{Yoon 2010}). Las sociedades individualistas se
+(\citeproc{ref-oyserman2002}{Oyserman et~al., 2002};
+\citeproc{ref-yoon2010}{Yoon, 2010}). Las sociedades individualistas se
 caracterizarían por la existencia de lazos poco estrechos entre sus
 individuos, de quienes se espera se hagan cargos de sí mismos y de su
 familia inmediata. Las sociedades colectivistas, en tanto, se definen
 porque sus miembros están integrados desde su nacimiento a grupos
 fuertemente cohesionados que los protegen a lo largo de sus vidas a
-cambio de una lealtad incuestionable (\citeproc{ref-yoon2010}{Yoon
+cambio de una lealtad incuestionable (\citeproc{ref-yoon2010}{Yoon,
 2010}).
 
 Pese a su influencia, este enfoque ha recibido críticas por su vaguedad
 conceptual ---a veces tratado como un ``catch-all'' para explicar toda
-diferencia cultural (\citeproc{ref-voronov2002}{Voronov y Singer
+diferencia cultural (\citeproc{ref-voronov2002}{Voronov \& Singer,
 2002})--- y por su sesgo normativo, que asocia el individualismo con la
-modernidad y el desarrollo (\citeproc{ref-martuccelli2010}{Martuccelli
-2010}; \citeproc{ref-voronov2002}{Voronov y Singer 2002};
-\citeproc{ref-wang2010}{Wang y Liu 2010}). También se le objeta la
+modernidad y el desarrollo (\citeproc{ref-martuccelli2010}{Martuccelli,
+2010}; \citeproc{ref-voronov2002}{Voronov \& Singer, 2002};
+\citeproc{ref-wang2010}{Wang \& Liu, 2010}). También se le objeta la
 imprecisión en la definición de ``colectivos'' ---sin distinguir con
 claridad entre grupos, colectivos y comunidades
-(\citeproc{ref-brewer2007}{Brewer y Chen 2007};
-\citeproc{ref-moemeka1998}{Moemeka 1998};
-\citeproc{ref-oyserman2002}{Oyserman, Coon, y Kemmelmeier 2002})--- y la
-frecuente confusión entre niveles de análisis (cultural vs.~individual),
-a menudo solapando cofundiéndose a nivel operacional y teórico con
-conceptos como el \emph{self-construal} (\citeproc{ref-cross2011}{Cross,
-Hardin, y Gercek-Swing 2011}; \citeproc{ref-voronov2002}{Voronov y
-Singer 2002}).
+(\citeproc{ref-brewer2007}{Brewer \& Chen, 2007};
+\citeproc{ref-moemeka1998}{Moemeka, 1998};
+\citeproc{ref-oyserman2002}{Oyserman et~al., 2002})--- y la frecuente
+confusión entre niveles de análisis (cultural vs.~individual), a menudo
+solapando cofundiéndose a nivel operacional y teórico con conceptos como
+el \emph{self-construal} (\citeproc{ref-cross2011}{Cross et~al., 2011};
+\citeproc{ref-voronov2002}{Voronov \& Singer, 2002}).
 
 A ello se suman problemas de operacionalización
-(\citeproc{ref-brewer2007}{Brewer y Chen 2007};
-\citeproc{ref-oyserman2002}{Oyserman, Coon, y Kemmelmeier 2002}). Brewer
-y Chen (\citeproc{ref-brewer2007}{2007}) señalan la existencia de una
-asimetría habitual en las operacionalizaciones de los conceptos:
-mientras el individualismo se mide con ítems sobre identidad y agencia
-personal, el colectivismo suele capturarse como un sistema de valores.
+(\citeproc{ref-brewer2007}{Brewer \& Chen, 2007};
+\citeproc{ref-oyserman2002}{Oyserman et~al., 2002}). Brewer y Chen
+(\citeproc{ref-brewer2007}{2007}) señalan la existencia de una asimetría
+habitual en las operacionalizaciones de los conceptos: mientras el
+individualismo se mide con ítems sobre identidad y agencia personal, el
+colectivismo suele capturarse como un sistema de valores.
 
 Estas discrepancias conceptuales podrían explicar las anomalías
 observados en varios de estos estudios, como que los individualistas
 pueden ser tanto o más colectivistas que colectivistas mismos
-(\citeproc{ref-oyserman2002}{Oyserman, Coon, y Kemmelmeier 2002}), o que
-en determinados contextos los colectivistas actúan de manera
-individualista (\citeproc{ref-voronov2002}{Voronov y Singer 2002}).
+(\citeproc{ref-oyserman2002}{Oyserman et~al., 2002}), o que en
+determinados contextos los colectivistas actúan de manera individualista
+(\citeproc{ref-voronov2002}{Voronov \& Singer, 2002}).
 
 En el plano agregado, Chile ilustra esas tensiones. Bajo la definición
 de Hofstede, la sociedad chilena ha sido clasificada como colectivista
-(\citeproc{ref-leonquillas2022}{León Quillas, Rueda Rodríguez, y
-Hernández Rodríguez 2022}; \citeproc{ref-rojas2008}{Rojas-Méndez et~al.
-2008}). Esto concuerda con hallazgos que reportan altos niveles de
-colectivismo, sea como opuesto al individualismo
-(\citeproc{ref-oyserman2002}{Oyserman, Coon, y Kemmelmeier 2002}) o como
-self-construal interdependiente (\citeproc{ref-benavides2020}{Benavides
-y Hur 2020}). Sin embargo, otras mediciones muestran niveles de
-individualismo en Chile que son comparables o superiores a los de
-sociedades típicamente individualistas, como Estados Unidos
-(\citeproc{ref-oyserman2002}{Oyserman, Coon, y Kemmelmeier 2002}) o
-Noruega (\citeproc{ref-kolstad2009}{Kolstad y Horpestad 2009}).
+(\citeproc{ref-leonquillas2022}{León Quillas et~al., 2022};
+\citeproc{ref-rojas2008}{Rojas-Méndez et~al., 2008}). Esto concuerda con
+hallazgos que reportan altos niveles de colectivismo, sea como opuesto
+al individualismo (\citeproc{ref-oyserman2002}{Oyserman et~al., 2002}) o
+como self-construal interdependiente
+(\citeproc{ref-benavides2020}{Benavides \& Hur, 2020}). Sin embargo,
+otras mediciones muestran niveles de individualismo en Chile que son
+comparables o superiores a los de sociedades típicamente
+individualistas, como Estados Unidos
+(\citeproc{ref-oyserman2002}{Oyserman et~al., 2002}) o Noruega
+(\citeproc{ref-kolstad2009}{Kolstad \& Horpestad, 2009}).
 
 Surge así una doble pregunta: ¿es realmente una sociedad colectivista?,
 y si no lo es, ¿hasta qué punto es una sociedad individualista? La
@@ -384,21 +385,20 @@ la sociología del individuo.
 Desde fines de los noventa, la teoría de la individualización ha sido un
 marco ampliamente utilizado en las ciencias sociales para analizar
 transformaciones culturales, sociales y económicas
-(\citeproc{ref-yopo2013}{Yopo 2013}), aplicándose a temáticas como
-género y familia (\citeproc{ref-murray2022}{Murray y Tizzoni 2022}),
-religión (\citeproc{ref-baeza2022}{Baeza y Imbarack 2022};
-\citeproc{ref-cortesparedes_autonomia_2022}{Cortés Paredes 2022}),
-trabajo (\citeproc{ref-soto2021}{Soto, Stecher, y Frías 2021}),
-seguridad (\citeproc{ref-trebilcock2019}{Trebilcock y Luneke 2019}),
-discapacidad (\citeproc{ref-solsona-cisternas2023}{Solsona-Cisternas
-2023}) y educación (\citeproc{ref-canalesceron2021}{Canales Cerón,
-Orellana Calderón, y Guajardo Mañán 2021};
-\citeproc{ref-pinheiro2023}{Pinheiro, Di Leo, y Varela 2023}). No
+(\citeproc{ref-yopo2013}{Yopo, 2013}), aplicándose a temáticas como
+género y familia (\citeproc{ref-murray2022}{Murray \& Tizzoni, 2022}),
+religión (\citeproc{ref-baeza2022}{Baeza \& Imbarack, 2022};
+\citeproc{ref-cortesparedes_autonomia_2022}{Cortés Paredes, 2022}),
+trabajo (\citeproc{ref-soto2021}{Soto et~al., 2021}), seguridad
+(\citeproc{ref-trebilcock2019}{Trebilcock \& Luneke, 2019}),
+discapacidad (\citeproc{ref-solsona-cisternas2023}{Solsona-Cisternas,
+2023}) y educación (\citeproc{ref-canalesceron2021}{Canales Cerón
+et~al., 2021}; \citeproc{ref-pinheiro2023}{Pinheiro et~al., 2023}). No
 obstante, se ha advertido su adopción a veces acrítica, con escasa
 atención a especificidades nacionales y latinoamericanas y con limitada
 incorporación de variables sociodemográficas que permitan identificar
-diferencias entre grupos (\citeproc{ref-gayo_individuo_2017}{Gayo 2017};
-\citeproc{ref-yopo2013}{Yopo 2013}).
+diferencias entre grupos (\citeproc{ref-gayo_individuo_2017}{Gayo,
+2017}; \citeproc{ref-yopo2013}{Yopo, 2013}).
 
 Sin embargo, se ha advertido que muchas de las investigaciones que
 siguen esta línea teórica lo hacen a través de una aproximación acrítica
@@ -407,16 +407,16 @@ las particularidades de estos procesos en Chile y en América Latina. Por
 otro lado, se ha observado que en los estudios que utilizan esta
 perspectiva teórica rara vez se usan variables sociodemográficas de
 manera explicativa, descuidando posibles diferencias entre grupos
-sociales (\citeproc{ref-gayo_individuo_2017}{Gayo 2017}).
+sociales (\citeproc{ref-gayo_individuo_2017}{Gayo, 2017}).
 
 Reconocer estas limitaciones es crucial, ya que existe el riesgo de
 asumir una individuación homogénea dentro de la sociedad, sin
 contrastación empírica suficiente, ya sea por imprecisiones conceptual
-(\citeproc{ref-yopo2013}{Yopo 2013}) o por déficits metodológicos
-(\citeproc{ref-gayo_individuo_2017}{Gayo 2017}).Esta brecha existe pese
+(\citeproc{ref-yopo2013}{Yopo, 2013}) o por déficits metodológicos
+(\citeproc{ref-gayo_individuo_2017}{Gayo, 2017}).Esta brecha existe pese
 al consenso aparente de que la individuación es un proceso que diverge
 no solo entre culturas, sino también dentro de una misma sociedad
-(\citeproc{ref-martuccelli2018}{Martuccelli 2018}).
+(\citeproc{ref-martuccelli2018}{Martuccelli, 2018}).
 
 Ante esto, el siguiente artículo busca abordar estas diferencias no solo
 de manera declarativa a nivel teórico, sino identificarlas
@@ -435,13 +435,13 @@ individualismo en la sociedad chilena? Abordar estas preguntas desde la
 psicología cultural puede conducir ---como advierte Martuccelli--- a un
 ``relato de la insuficiencia'' (``Chile no es un país individualista'')
 o a un relato del ni-ni (``Chile no es ni individualista ni
-colectivista'') (\citeproc{ref-martuccelli2010}{Martuccelli 2010}).
+colectivista'') (\citeproc{ref-martuccelli2010}{Martuccelli, 2010}).
 
 Para escapar de estas trampas y ganar capacidad descriptiva, se propone
 el giro hacia la sociología del individuo desarrollada por Danilo
-Martuccelli (\citeproc{ref-araujo2012}{Araujo y Martuccelli 2012},
+Martuccelli (\citeproc{ref-araujo2012}{Araujo \& Martuccelli, 2012},
 \citeproc{ref-araujo2014}{2014}, \citeproc{ref-araujo2020a}{2020b};
-\citeproc{ref-martuccelli2010}{Martuccelli 2010},
+\citeproc{ref-martuccelli2010}{Martuccelli, 2010},
 \citeproc{ref-martuccelli2018}{2018}). La ventaja de adoptar esta
 perspectiva es que ofrece un marco unificador que permite rescatar los
 aportes de otras disciplinas a la descripción teórica y empírica del
@@ -454,7 +454,7 @@ de un individuo soberano en dos sentidos: (i) dueño de sí
 orden social y la soberanía colectiva a partir de su racionalidad. Este
 individuo se ubica en el centro del pacto social, en lo que Martuccelli
 denomina individualismo institucional, que se compone de tres
-características principales (\citeproc{ref-martuccelli2018}{Martuccelli
+características principales (\citeproc{ref-martuccelli2018}{Martuccelli,
 2018}):
 
 \begin{enumerate}
@@ -474,7 +474,7 @@ características principales (\citeproc{ref-martuccelli2018}{Martuccelli
 Las lecturas se límitan a entender el individualismo como este modelo
 universal suelen negar la existencia de individuos, individualización o
 individualismo allí donde el patrón no calza
-(\citeproc{ref-martuccelli2018}{Martuccelli 2018}). En cambio, la
+(\citeproc{ref-martuccelli2018}{Martuccelli, 2018}). En cambio, la
 sociología del individuo permite pluralizar el fenómeno y describir sus
 configuraciones concretas. Sobre esa base, adoptamos la siguiente
 definición que, si bien rescata la dimensiones del individualismo
@@ -497,25 +497,25 @@ individual}\label{legitimidad-de-la-acciuxf3n-individual}
 
 La legitimidad de la acción individual hace referencia a las creencias
 sobre la agencia de los individuos en el mundo social
-(\citeproc{ref-brewer2007}{Brewer y Chen 2007}) y la legitimidad de
+(\citeproc{ref-brewer2007}{Brewer \& Chen, 2007}) y la legitimidad de
 acciones individualizadas en las esferas de la economía, la política y
-las emociones (\citeproc{ref-cortois2018}{Cortois y Laermans 2018}). Una
-mayor legitimidad de la acción individual se relaciona a una mayor
+las emociones (\citeproc{ref-cortois2018}{Cortois \& Laermans, 2018}).
+Una mayor legitimidad de la acción individual se relaciona a una mayor
 valoración de la individualidad, la cual se define como el ``grado de
 diferenciación o de singularización reconocido o legítimamente alcanzado
 por un individuo dentro de un colectivo''
-(\citeproc{ref-martuccelli2018}{Martuccelli 2018}).
+(\citeproc{ref-martuccelli2018}{Martuccelli, 2018}).
 
 El individualismo moderno ha sido institucionalizado principalmente en 3
 esferas: la económica, la política y la afectiva
-(\citeproc{ref-cortois2018}{Cortois y Laermans 2018};
-\citeproc{ref-martuccelli2018}{Martuccelli 2018}). En la esfera
+(\citeproc{ref-cortois2018}{Cortois \& Laermans, 2018};
+\citeproc{ref-martuccelli2018}{Martuccelli, 2018}). En la esfera
 económica, el individualismo legitima la acción individual estratégica,
 poniendo los medios por sobre los fines. En cambio, en la esfera
 política, el individualismo se expresa como la obligación de tratar al
 otro como un fin en sí mismo. Por último, en la esfera afectiva, la
 acción individual se entiende como un medio para la expresión auténtica
-del yo (\citeproc{ref-cortois2018}{Cortois y Laermans 2018}).
+del yo (\citeproc{ref-cortois2018}{Cortois \& Laermans, 2018}).
 
 La hipótesis de esta artículo es que determinadas sociedades, o grupos
 de individuos dentro de estas, pueden legitimar la acción individual en
@@ -530,42 +530,42 @@ Individuo}\label{representaciones-culturales-del-individuo}
 
 Son las diversas concepciones en torno a las que se pueden definir las
 identidades de los individuos en relación a sus grupos de referencia
-(\citeproc{ref-brewer2007}{Brewer y Chen 2007}). Al respecto, es posible
-distinguir entre representaciones independientes, relacionales y
-colectivas (\citeproc{ref-brewer2007}{Brewer y Chen 2007}).
+(\citeproc{ref-brewer2007}{Brewer \& Chen, 2007}). Al respecto, es
+posible distinguir entre representaciones independientes, relacionales y
+colectivas (\citeproc{ref-brewer2007}{Brewer \& Chen, 2007}).
 
 La representación independiente es aquella en que el individuo se
 concibe como un ente atomizado y prexistente a sus lazos sociales.
 Aunque esta concepción se ha considerado como propia de las culturas
-individualistas (\citeproc{ref-benavides2020}{Benavides y Hur 2020};
-\citeproc{ref-cross2011}{Cross, Hardin, y Gercek-Swing 2011}), tal idea
-ha sido problematizada teórica (\citeproc{ref-voronov2002}{Voronov y
-Singer 2002}) y empíricamente (\citeproc{ref-benavides2020}{Benavides y
-Hur 2020}; \citeproc{ref-kolstad2009}{Kolstad y Horpestad 2009}).
-Además, la persistencia de los llamados valores asiáticos en esas
-sociedades, que conceptualizan al individuo como inseparable de sus
-lazos sociales (\citeproc{ref-zhai2022}{Zhai 2022}), y la
-conceptualización de un híper-actor relacional en la sociedad chilena
-(\citeproc{ref-araujo2020a}{Araujo y Martuccelli 2020b}), sugieren la
+individualistas (\citeproc{ref-benavides2020}{Benavides \& Hur, 2020};
+\citeproc{ref-cross2011}{Cross et~al., 2011}), tal idea ha sido
+problematizada teórica (\citeproc{ref-voronov2002}{Voronov \& Singer,
+2002}) y empíricamente (\citeproc{ref-benavides2020}{Benavides \& Hur,
+2020}; \citeproc{ref-kolstad2009}{Kolstad \& Horpestad, 2009}). Además,
+la persistencia de los llamados valores asiáticos en esas sociedades,
+que conceptualizan al individuo como inseparable de sus lazos sociales
+(\citeproc{ref-zhai2022}{Zhai, 2022}), y la conceptualización de un
+híper-actor relacional en la sociedad chilena
+(\citeproc{ref-araujo2020a}{Araujo \& Martuccelli, 2020b}), sugieren la
 posibilidad de individualismos que difieren de las representaciones
 independientes.
 
 De tal modo, se podrían identificar, además, representaciones
 relacionales y representaciones colectivas
-(\citeproc{ref-brewer2007}{Brewer y Chen 2007}). En las primeras, la
+(\citeproc{ref-brewer2007}{Brewer \& Chen, 2007}). En las primeras, la
 identidad del individuo se define por sus relaciones cercanas, tales
 como la familia o los amigos. En las segundas, en tanto, es la
 pertenencia a colectivos sociales más abstractos -- esto es, grupos
 nacionales, regionales, étnicos o religiosos -- lo que define a la
-identidad individual (\citeproc{ref-brewer2007}{Brewer y Chen 2007}).
+identidad individual (\citeproc{ref-brewer2007}{Brewer \& Chen, 2007}).
 
 La hipótesis de este artículo se alinea con las investigaciones de
 Kathya Aruajo y Danilo Martuccelli (\citeproc{ref-araujo2012}{2012}),
 que definen con al individualismo chileno como uno predominantemente
 relacional. Sin embargo, y en línea con las investigaciones sobre
 \emph{self-construal} en la sociedad chilena
-(\citeproc{ref-benavides2020}{Benavides y Hur 2020};
-\citeproc{ref-kolstad2009}{Kolstad y Horpestad 2009}), se espera
+(\citeproc{ref-benavides2020}{Benavides \& Hur, 2020};
+\citeproc{ref-kolstad2009}{Kolstad \& Horpestad, 2009}), se espera
 igualmente encontrar altos niveles de representaciones independientes.
 
 \subsection{Valores}\label{valores}
@@ -573,36 +573,36 @@ igualmente encontrar altos niveles de representaciones independientes.
 Por último, la tercera dimensión del individualismo se refiere a la
 importancia relativa que se le otorga en una sociedad a diversos valores
 e imperativos individuales o colectivos
-(\citeproc{ref-brewer2007}{Brewer y Chen 2007}), los cuales son
+(\citeproc{ref-brewer2007}{Brewer \& Chen, 2007}), los cuales son
 producidos por procesos sociohistóricos de individuación
-(\citeproc{ref-martuccelli2018}{Martuccelli 2018}). En el contexto del
+(\citeproc{ref-martuccelli2018}{Martuccelli, 2018}). En el contexto del
 individualismo institucional, el principal valor para el individuo es la
-autonomía (\citeproc{ref-martuccelli2010}{Martuccelli 2010}), la que es
+autonomía (\citeproc{ref-martuccelli2010}{Martuccelli, 2010}), la que es
 promovida a través de un entramado institucional
-(\citeproc{ref-martuccelli2018}{Martuccelli 2018}) que promueve que los
+(\citeproc{ref-martuccelli2018}{Martuccelli, 2018}) que promueve que los
 individuos se constituyen a sí mismos, planifiquen su propia vida y
 acepten la responsabilidad de si fracasan
-(\citeproc{ref-robles2001}{Robles 2001}). Es, pues, una individuación
+(\citeproc{ref-robles2001}{Robles, 2001}). Es, pues, una individuación
 reflexiva en la que los individuos se definen por el imperativo de
 ejercer control de sus destinos y tomar decisiones de manera autónoma
-(\citeproc{ref-robles2001}{Robles 2001};
-\citeproc{ref-silvapalacios2015}{Silva Palacios 2015}).
+(\citeproc{ref-robles2001}{Robles, 2001};
+\citeproc{ref-silvapalacios2015}{Silva Palacios, 2015}).
 
 Sin embargo, también se han planteado visiones críticas a esta
 concepción, particularmente desde América Latina
-(\citeproc{ref-araujo2012}{Araujo y Martuccelli 2012};
-\citeproc{ref-robles2001}{Robles 2001}). No toda individuación sería
+(\citeproc{ref-araujo2012}{Araujo \& Martuccelli, 2012};
+\citeproc{ref-robles2001}{Robles, 2001}). No toda individuación sería
 reflexiva, ya que muchos individuos podrían experimentarla de forma
 delegativa, como una imposición (\citeproc{ref-silvapalacios2015}{Silva
-Palacios 2015}); no como un mundo de posibilidades, sino como uno lleno
+Palacios, 2015}); no como un mundo de posibilidades, sino como uno lleno
 de incertidumbres. Los individuos, de tal modo, deben enfrentar las
 inseguridades ontológicas de la vida social a partir de sus propias
 habilidades bajo el imperativo de ``arréglatelas como puedas''
-(\citeproc{ref-araujo2014}{Araujo y Martuccelli 2014};
-\citeproc{ref-robles2001}{Robles 2001}). Frente a esto, la valorización
+(\citeproc{ref-araujo2014}{Araujo \& Martuccelli, 2014};
+\citeproc{ref-robles2001}{Robles, 2001}). Frente a esto, la valorización
 de la autonomía se desplaza por la búsqueda de seguridad como valor
 principal de esta forma de individuación
-(\citeproc{ref-silvapalacios2015}{Silva Palacios 2015}).
+(\citeproc{ref-silvapalacios2015}{Silva Palacios, 2015}).
 
 La hipótesis de esta investigación es que en la sociedad chilena ha
 predominado una individuación delegativa que enfatiza valores como la
@@ -807,17 +807,17 @@ Se empleó un análisis de clases latentes (LCA) para identificar los
 perfiles de individualismo en la sociedad chilena. El LCA es un modeleo
 de variables latentes categóricas, lo que permite identificar
 diferencias cualitativas y principios de organización dentro de la
-población (\citeproc{ref-collins2010}{Collins y Lanza 2010}).
+población (\citeproc{ref-collins2010}{Collins \& Lanza, 2010}).
 
 En contraste a las técnicas estadísticas más utilizadas, el análisis de
 clases latente se suele considerar como una \emph{aproximación orientada
-a la persona} (\citeproc{ref-collins2010}{Collins y Lanza 2010}). Etsta
-forma de abordar el análsisis estadístico se diferencia en que no busca
-establecer relaciones entre variables, sino que tiene como objetivo
-producir resultados interpretables a nivel del inviduo, brindando
-información sobre los patrones generales y el comportamiento de las
-personas (\citeproc{ref-bergman2015}{Bergman y Lundh 2015}). De tal
-modo, el LCA ofrece la oportunidad de llevar a cabo una sociología a
+a la persona} (\citeproc{ref-collins2010}{Collins \& Lanza, 2010}).
+Etsta forma de abordar el análsisis estadístico se diferencia en que no
+busca establecer relaciones entre variables, sino que tiene como
+objetivo producir resultados interpretables a nivel del inviduo,
+brindando información sobre los patrones generales y el comportamiento
+de las personas (\citeproc{ref-bergman2015}{Bergman \& Lundh, 2015}). De
+tal modo, el LCA ofrece la oportunidad de llevar a cabo una sociología a
 nivel del individuo, posibilitando mapear los procesos estructurales de
 individuación en Chile. Esto permitiría obtener una versión menos
 unívoca del individualismo chileno, desarrollando una tipología que
@@ -830,7 +830,7 @@ El análisis se realizó utilizando el paquete \textbf{poLCA}
 clases latentes de manera eficiente con solo unas pocas líneas de código
 y proporciona información valiosa sobre el tamaño de cada clase latente,
 las probabilidades posteriores de membresía y criterios para evaluar el
-ajuste del modelo (\citeproc{ref-linzer2011}{Linzer y Lewis 2011}).
+ajuste del modelo (\citeproc{ref-linzer2011}{Linzer \& Lewis, 2011}).
 
 La selección del modelo se realizó a partir de la evaluación del ajuste
 estadístico de modelos con distintos números de clase mediante el
@@ -839,7 +839,7 @@ Bayesiano (BIC), adeemás de criterios de interpretabilidad teórica. AIC
 y BIC son dos indicadores de ajuste relativo que permiten la comparación
 de modelos. Un valor más bajo en estos indicadores indica un mejor
 ajuste, lo que representa un equilibrio óptimo entre la complejidad y la
-parsimonia dle modelo (\citeproc{ref-collins2010}{Collins y Lanza
+parsimonia dle modelo (\citeproc{ref-collins2010}{Collins \& Lanza,
 2010}).
 
 \section*{Resultados}\label{resultados}
@@ -876,15 +876,15 @@ en la vida. Además, el 90\% se siente cercano o muy cercano al país. En
 conjunto, estos resultados son coherentes con la evidencia previa que
 indica que las autoconcepciones independientes e interdependientes no
 son excluyentes, sino que coexisten y alcanzan niveles igualmente altos
-en Chile (\citeproc{ref-benavides2020}{Benavides y Hur 2020};
-\citeproc{ref-kolstad2009}{Kolstad y Horpestad 2009}).
+en Chile (\citeproc{ref-benavides2020}{Benavides \& Hur, 2020};
+\citeproc{ref-kolstad2009}{Kolstad \& Horpestad, 2009}).
 
 Por último, una proporción importantes de la población (82\%) prioriza
 la seguridad (en rojo en la Figura~\ref{fig-descriptivos}) por sobre la
 libertad (en azul). Este hallazgo podría representar evidencia a favor
 de que la autonomía no es el valor principal en base al cual las
 personas no se constituyen como individuos en Chile
-(\citeproc{ref-martuccelli2010}{Martuccelli 2010}).
+(\citeproc{ref-martuccelli2010}{Martuccelli, 2010}).
 
 \subsection{Perfiles de
 Individualismo}\label{perfiles-de-individualismo}
@@ -927,7 +927,7 @@ alto de independencia, con un 68\%. No es, pues, que se niegue la
 indivualidad, sino que se concibe que esta debe estar siempre subsumida
 al respeto irrestrico a las normas sociales establecidas. Dado que la
 conformidad es una característica fuertemente asociada a las
-personalidades autoritarias (\citeproc{ref-zakrisson2005}{Zakrisson
+personalidades autoritarias (\citeproc{ref-zakrisson2005}{Zakrisson,
 2005}), se ha decidido bautizar a este perfil como
 \textbf{individualismo autoritario}.
 
@@ -1059,7 +1059,7 @@ población.
 
 La tipología elaborada permite establecer un diálogo con la descripción
 del individualismo agéntico y el hiper-actor relacional propuesto por
-Araujo y Martuccelli (\citeproc{ref-araujo2020}{Araujo y Martuccelli
+Araujo y Martuccelli (\citeproc{ref-araujo2020}{Araujo \& Martuccelli,
 2020a}). Este modelo presenta dos características fundamentales: en
 primer lugar, la confianza depositada en las habilidades personales para
 afrontar la vida social. En segundo lugar, la centralidad de las redes
@@ -1098,25 +1098,26 @@ chileno parece no entrar en contradicción con las concepciones
 independientes, que muestran niveles tan elevados como los de
 interdependencia. Esto es consistente tanto con las dos carácteristas
 que describen al individualismo agéntico
-(\citeproc{ref-araujo2020}{Araujo y Martuccelli 2020a}) como con las
+(\citeproc{ref-araujo2020}{Araujo \& Martuccelli, 2020a}) como con las
 mediciones del \emph{self-construal} en Chile
-(\citeproc{ref-benavides2020}{Benavides y Hur 2020};
-\citeproc{ref-kolstad2009}{Kolstad y Horpestad 2009}). Además, ofrece
+(\citeproc{ref-benavides2020}{Benavides \& Hur, 2020};
+\citeproc{ref-kolstad2009}{Kolstad \& Horpestad, 2009}). Además, ofrece
 más respaldo a la idea de que ubicar a Chile en un continuo entre el
 individualismo y el colectivismo resulta problemático.
 
 En resumen, los datos analizados parecen apuntar a la existncia de un
-individualismo agéntico (\citeproc{ref-araujo2020}{Araujo y Martuccelli
-2020a}), que representaría una suerte de modelo ideal del individualismo
-en Chile. Sin embargo, el aporte de esta investigación radica e que,
-mediante el análisis de clases latentes, es posible observar cómo este
-modelo diverge dentro de la sociedad chilena. Para algunos, la acción
-individual debe estar subordinada al orden normativo, mientras que para
-otros es legítimo actuar de manera estratégica incluso si ello
-transgrede normas sociales. Mientras que para unos la individualidad
-tiene cabida en todas las esferas, para otros su legitimidad no alcanza
-para la esfera afectiva. De tal modo, este enfoque permite observar los
-matics y las divergencias de los procesos de individualización en Chile.
+individualismo agéntico (\citeproc{ref-araujo2020}{Araujo \&
+Martuccelli, 2020a}), que representaría una suerte de modelo ideal del
+individualismo en Chile. Sin embargo, el aporte de esta investigación
+radica e que, mediante el análisis de clases latentes, es posible
+observar cómo este modelo diverge dentro de la sociedad chilena. Para
+algunos, la acción individual debe estar subordinada al orden normativo,
+mientras que para otros es legítimo actuar de manera estratégica incluso
+si ello transgrede normas sociales. Mientras que para unos la
+individualidad tiene cabida en todas las esferas, para otros su
+legitimidad no alcanza para la esfera afectiva. De tal modo, este
+enfoque permite observar los matics y las divergencias de los procesos
+de individualización en Chile.
 
 \section{Conclusiones}\label{conclusiones}
 
@@ -1153,7 +1154,7 @@ Chile.
 Especialmente, se debe tener en cuenta que la recodificación de
 variables continuas como dicotómicas es una solución correcta, pero que
 no deja de ser problemática, pues resulta en pérdida de parte de la
-varianza de los ítems (\citeproc{ref-fernandes2019}{Fernandes et~al.
+varianza de los ítems (\citeproc{ref-fernandes2019}{Fernandes et~al.,
 2019}). Futuras investigaciones deberían considerar elaborar indicadores
 directamente como variables categóricas que no necesiten recodificación
 para ser incluidas en el modelo de clases latentes. De esta manera, se
@@ -1179,7 +1180,7 @@ chileno. Esto abre la posibilidad para profundizar en este modelo en el
 futuro, particularmente en su interacción con otros fenómenos sociales.
 
 Por dar solo un ejemplo, en el más reciente Informe sobre el Desarrollo
-Humano en Chile (\citeproc{ref-pnud2024}{PNUD 2024}) se identifica a la
+Humano en Chile (\citeproc{ref-pnud2024}{PNUD, 2024}) se identifica a la
 individualismo asocial coo una de las lógicas inhibidoras para conducir
 el cambio social en el país. ¿Es esa individuación asocial homogénea
 dentro de la sociedad chilena? ¿Se asocian distintas formas de
@@ -1193,242 +1194,239 @@ política.
 \phantomsection\label{refs}
 \begin{CSLReferences}{1}{0}
 \bibitem[\citeproctext]{ref-araujo2012}
-Araujo, Kathya, y Danilo Martuccelli. 2012. \emph{Desaf{í}os {Comunes}.
+Araujo, K., \& Martuccelli, D. (2012). \emph{Desaf{í}os {Comunes}.
 {Retrato} de La Sociedad Chilena y Sus Individuos}. LOM.
 
 \bibitem[\citeproctext]{ref-araujo2014}
----------. 2014. {«Beyond Institutional Individualism: {Agentic}
-Individualism and the Individuation Process in {Chilean} Society»}.
-\emph{Current Sociology} 62 (1): 24-40.
-\url{https://doi.org/10.1177/0011392113512496}.
+Araujo, K., \& Martuccelli, D. (2014). Beyond Institutional
+Individualism: {Agentic} Individualism and the Individuation Process in
+{Chilean} Society. \emph{Current Sociology}, \emph{62}(1), 24-40.
+\url{https://doi.org/10.1177/0011392113512496}
 
 \bibitem[\citeproctext]{ref-araujo2020}
----------. 2020a. {«Leer Los Movimientos Sociales Desde El
-Individualismo: {Reflexiones} a Partir de {Latinoam{é}rica}»}.
-\emph{Educa{ç}{ã}o \& Sociedade} 41: e228265.
-\url{https://doi.org/10.1590/es.228265}.
+Araujo, K., \& Martuccelli, D. (2020a). Leer Los Movimientos Sociales
+Desde El Individualismo: {Reflexiones} a Partir de {Latinoam{é}rica}.
+\emph{Educa{ç}{ã}o \& Sociedade}, \emph{41}, e228265.
+\url{https://doi.org/10.1590/es.228265}
 
 \bibitem[\citeproctext]{ref-araujo2020a}
----------. 2020b. {«Problematizaciones Del Individualismo En {Am{é}rica
-Latina}»}. \emph{Perfiles Latinoamericanos} 28 (55).
-\url{https://doi.org/10.18504/pl2855-001-2020}.
+Araujo, K., \& Martuccelli, D. (2020b). Problematizaciones Del
+Individualismo En {Am{é}rica Latina}. \emph{Perfiles Latinoamericanos},
+\emph{28}(55). \url{https://doi.org/10.18504/pl2855-001-2020}
 
 \bibitem[\citeproctext]{ref-baeza2022}
-Baeza, Jorge, y Patricia Imbarack. 2022. {«{Movilidad religiosa en
-j{ó}venes universitarios de Chile: desafiliaciones y reafiliaciones en
-la iglesia cat{ó}lica}»}. \emph{Religi{ã}o \& Sociedade} 42 (3): 60-83.
-\url{https://doi.org/10.1590/0100-85872022v42n3cap03}.
+Baeza, J., \& Imbarack, P. (2022). {Movilidad religiosa en j{ó}venes
+universitarios de Chile: desafiliaciones y reafiliaciones en la iglesia
+cat{ó}lica}. \emph{Religi{ã}o \& Sociedade}, \emph{42}(3), 60-83.
+\url{https://doi.org/10.1590/0100-85872022v42n3cap03}
 
 \bibitem[\citeproctext]{ref-benavides2020}
-Benavides, Paloma, y Taekyun Hur. 2020. {«Self-{Construal Differences}
-in {Chile} and {South Korea}: {A Brief Report}»}. \emph{Psychological
-Reports} 123 (6): 2410-17.
-\url{https://doi.org/10.1177/0033294119868786}.
+Benavides, P., \& Hur, T. (2020). Self-{Construal Differences} in
+{Chile} and {South Korea}: {A Brief Report}. \emph{Psychological
+Reports}, \emph{123}(6), 2410-2417.
+\url{https://doi.org/10.1177/0033294119868786}
 
 \bibitem[\citeproctext]{ref-bergman2015}
-Bergman, Lars R., y Lars-Gunnar Lundh. 2015. {«Introduction: {The}
-Person-Oriented Approach: {Roots} and Roads to the Future»}.
-\emph{Journal for Person-Oriented Research} 1 (1-2): 1-6.
-\url{https://doi.org/10.17505/jpor.2015.01}.
+Bergman, L. R., \& Lundh, L.-G. (2015). Introduction: {The}
+Person-Oriented Approach: {Roots} and Roads to the Future. \emph{Journal
+for Person-Oriented Research}, \emph{1}(1-2), 1-6.
+\url{https://doi.org/10.17505/jpor.2015.01}
 
 \bibitem[\citeproctext]{ref-brewer2007}
-Brewer, Marilynn B., y Ya-Ru Chen. 2007. {«Where ({Who}) {Are
-Collectives} in {Collectivism}? {Toward Conceptual Clarification} of
-{Individualism} and {Collectivism}.»} \emph{Psychological Review} 114
-(1): 133-51. \url{https://doi.org/10.1037/0033-295X.114.1.133}.
+Brewer, M. B., \& Chen, Y.-R. (2007). Where ({Who}) {Are Collectives} in
+{Collectivism}? {Toward Conceptual Clarification} of {Individualism} and
+{Collectivism}. \emph{Psychological Review}, \emph{114}(1), 133-151.
+\url{https://doi.org/10.1037/0033-295X.114.1.133}
 
 \bibitem[\citeproctext]{ref-canalesceron2021}
-Canales Cerón, Manuel, Víctor Sebastián Orellana Calderón, y Fabián
-Guajardo Mañán. 2021. {«Sujeto y Cotidiano En La Era Neoliberal: El Caso
-de La Educaci{ó}n Chilena»}. \emph{Revista Mexicana de Ciencias
-Pol{í}ticas y Sociales} 67 (244): 285-307.
-\url{https://doi.org/10.22201/fcpys.2448492xe.2022.244.70386}.
+Canales Cerón, M., Orellana Calderón, V. S., \& Guajardo Mañán, F.
+(2021). Sujeto y Cotidiano En La Era Neoliberal: El Caso de La
+Educaci{ó}n Chilena. \emph{Revista Mexicana de Ciencias Pol{í}ticas y
+Sociales}, \emph{67}(244), 285-307.
+\url{https://doi.org/10.22201/fcpys.2448492xe.2022.244.70386}
 
 \bibitem[\citeproctext]{ref-castillo_cohesion_2022}
-Castillo, Juan Carlos, Vicente Espinoza, y Emmanuelle Barozet. 2022.
-{«{Cohesi{ó}n social en Chile en tiempos de cambio: indicadores,
-perfiles y factores asociados}»}.
+Castillo, J. C., Espinoza, V., \& Barozet, E. (2022). \emph{{Cohesi{ó}n
+social en Chile en tiempos de cambio: indicadores, perfiles y factores
+asociados}}.
 
 \bibitem[\citeproctext]{ref-castillo_socialization_2024}
-Castillo, Juan Carlos, Mauricio Salgado, Kevin Carrasco, y Andreas
-Laffert. 2024. {«The {Socialization} of {Meritocracy} and {Market
-Justice Preferences} at {School}»}. \emph{Societies} 14 (11): 214.
-\url{https://doi.org/10.3390/soc14110214}.
+Castillo, J. C., Salgado, M., Carrasco, K., \& Laffert, A. (2024). The
+{Socialization} of {Meritocracy} and {Market Justice Preferences} at
+{School}. \emph{Societies}, \emph{14}(11), 214.
+\url{https://doi.org/10.3390/soc14110214}
 
 \bibitem[\citeproctext]{ref-collins2010}
-Collins, Linda, y Stephanie Lanza. 2010. \emph{Latent Class and Latent
+Collins, L., \& Lanza, S. (2010). \emph{Latent Class and Latent
 Tansition Analysis.} Wiley.
 
 \bibitem[\citeproctext]{ref-cortesparedes_autonomia_2022}
-Cortés Paredes, Gabriel. 2022. {«Autonom{í}a En El Horizonte: Un
-An{á}lisis Narrativo de Los Procesos de Deconversi{ó}n En {Temuco},
-{Chile}»}. \emph{Revista Temas Sociol{ó}gicos}, n.º 30: 75-105.
-\url{https://doi.org/10.29344/07196458.30.3122}.
+Cortés Paredes, G. (2022). Autonom{í}a En El Horizonte: Un An{á}lisis
+Narrativo de Los Procesos de Deconversi{ó}n En {Temuco}, {Chile}.
+\emph{Revista Temas Sociol{ó}gicos}, \emph{30}, 75-105.
+\url{https://doi.org/10.29344/07196458.30.3122}
 
 \bibitem[\citeproctext]{ref-cortois2018}
-Cortois, Liza, y Rudi Laermans. 2018. {«Rethinking Individualization:
-{The} Basic Script and the Three Variants of Institutionalized
-Individualism»}. \emph{European Journal of Social Theory} 21 (1): 60-78.
-\url{https://doi.org/10.1177/1368431017698474}.
+Cortois, L., \& Laermans, R. (2018). Rethinking Individualization: {The}
+Basic Script and the Three Variants of Institutionalized Individualism.
+\emph{European Journal of Social Theory}, \emph{21}(1), 60-78.
+\url{https://doi.org/10.1177/1368431017698474}
 
 \bibitem[\citeproctext]{ref-cross2011}
-Cross, Susan E., Erin E. Hardin, y Berna Gercek-Swing. 2011. {«The
+Cross, S. E., Hardin, E. E., \& Gercek-Swing, B. (2011). The
 {\emph{What}}{\emph{,} }{\emph{How}}{\emph{,} }{\emph{Why}}{\emph{, and}
-}{\emph{Where}} of {Self-Construal}»}. \emph{Personality and Social
-Psychology Review} 15 (2): 142-79.
-\url{https://doi.org/10.1177/1088868310373752}.
+}{\emph{Where}} of {Self-Construal}. \emph{Personality and Social
+Psychology Review}, \emph{15}(2), 142-179.
+\url{https://doi.org/10.1177/1088868310373752}
 
 \bibitem[\citeproctext]{ref-fernandes2019}
-Fernandes, Antônio, Caio Malaquias, Dalson Figueiredo, Enivaldo Da
-Rocha, y Rodrigo Lins. 2019. {«Why {Quantitative Variables Should Not Be
-Recoded} as {Categorical}»}. \emph{Journal of Applied Mathematics and
-Physics} 07 (07): 1519-30.
-\url{https://doi.org/10.4236/jamp.2019.77103}.
+Fernandes, A., Malaquias, C., Figueiredo, D., Da Rocha, E., \& Lins, R.
+(2019). Why {Quantitative Variables Should Not Be Recoded} as
+{Categorical}. \emph{Journal of Applied Mathematics and Physics},
+\emph{07}(07), 1519-1530. \url{https://doi.org/10.4236/jamp.2019.77103}
 
 \bibitem[\citeproctext]{ref-gayo_individuo_2017}
-Gayo, Modesto. 2017. {«{El individuo frente a la sociedad o el western
-sociol{ó}gico}»}. \emph{Estudios P{ú}blicos}, n.º 147: 263-79.
+Gayo, M. (2017). {El individuo frente a la sociedad o el western
+sociol{ó}gico}. \emph{Estudios P{ú}blicos}, \emph{147}, 263-279.
 
 \bibitem[\citeproctext]{ref-kolstad2009}
-Kolstad, Arnulf, y Silje Horpestad. 2009. {«Self-{Construal} in {Chile}
-and {Norway}: {Implications} for {Cultural Differences} in
-{Individualism} and {Collectivism}»}. \emph{Journal of Cross-Cultural
-Psychology} 40 (2): 275-81.
-\url{https://doi.org/10.1177/0022022108328917}.
+Kolstad, A., \& Horpestad, S. (2009). Self-{Construal} in {Chile} and
+{Norway}: {Implications} for {Cultural Differences} in {Individualism}
+and {Collectivism}. \emph{Journal of Cross-Cultural Psychology},
+\emph{40}(2), 275-281. \url{https://doi.org/10.1177/0022022108328917}
 
 \bibitem[\citeproctext]{ref-leonquillas2022}
-León Quillas, César Ignacio, Héctor Fernando Rueda Rodríguez, y
-Alejandra Hernández Rodríguez. 2022. {«Instituciones Informales,
-Emprendimiento y Progreso Social: Un Estudio Comparativo y
-Correlacional»}. \emph{Revista Guillermo de Ockham} 21 (1): 113-29.
-\url{https://doi.org/10.21500/22563202.5577}.
+León Quillas, C. I., Rueda Rodríguez, H. F., \& Hernández Rodríguez, A.
+(2022). Instituciones Informales, Emprendimiento y Progreso Social: Un
+Estudio Comparativo y Correlacional. \emph{Revista Guillermo de Ockham},
+\emph{21}(1), 113-129. \url{https://doi.org/10.21500/22563202.5577}
 
 \bibitem[\citeproctext]{ref-linzer2011}
-Linzer, Drew A., y Jeffrey B. Lewis. 2011. {«{poLCA}: {An R Package} for
-{Polytomous Variable Latent Class Analysis}»}. \emph{Journal of
-Statistical Software} 42 (junio): 1-29.
-\url{https://doi.org/10.18637/jss.v042.i10}.
+Linzer, D. A., \& Lewis, J. B. (2011). {poLCA}: {An R Package} for
+{Polytomous Variable Latent Class Analysis}. \emph{Journal of
+Statistical Software}, \emph{42}, 1-29.
+\url{https://doi.org/10.18637/jss.v042.i10}
 
 \bibitem[\citeproctext]{ref-martuccelli2010}
-Martuccelli, Danilo. 2010. \emph{{{\textquestiondown}Existen individuos
-en el sur?}} Santiago de Chile: LOM.
+Martuccelli, D. (2010). \emph{{{\textquestiondown}Existen individuos en
+el sur?}} LOM.
 
 \bibitem[\citeproctext]{ref-martuccelli2018}
----------. 2018. {«Variantes Del Individualismo»}. \emph{Estudios
-Sociol{ó}gicos de El Colegio de M{é}xico} 37 (109): 7-37.
-\url{https://doi.org/10.24201/es.2019v37n109.1732}.
+Martuccelli, D. (2018). Variantes Del Individualismo. \emph{Estudios
+Sociol{ó}gicos de El Colegio de M{é}xico}, \emph{37}(109), 7-37.
+\url{https://doi.org/10.24201/es.2019v37n109.1732}
 
 \bibitem[\citeproctext]{ref-mideso_informe_2020}
-Ministerio de Desarrollo Social y Familia. 2020. {«Informe {Final
+Ministerio de Desarrollo Social y Familia. (2020). \emph{Informe {Final
 Consejo Asesor} Para La {Cohesi{ó}n Social}. {Diagn{ó}stico} Para Una
 Aproximaci{ó}n a La Cohesi{ó}n Social En {Chile} y Recomendaciones Para
-Fortalecer El Aporte de La Pol{í}tica Social»}.
+Fortalecer El Aporte de La Pol{í}tica Social}.
 
 \bibitem[\citeproctext]{ref-moemeka1998}
-Moemeka, Andrew A. 1998. {«Communalism as a {Fundamental Dimension} of
-{Culture}»}. \emph{Journal of Communication} 48 (4): 118-41.
-\url{https://doi.org/10.1111/j.1460-2466.1998.tb02773.x}.
+Moemeka, A. A. (1998). Communalism as a {Fundamental Dimension} of
+{Culture}. \emph{Journal of Communication}, \emph{48}(4), 118-141.
+\url{https://doi.org/10.1111/j.1460-2466.1998.tb02773.x}
 
 \bibitem[\citeproctext]{ref-murray2022}
-Murray, Marjorie, y Constanza Tizzoni. 2022. {«Raising Children in
-Hostile Worlds in {Santiago} de {Chile}: {Optimism} and
-{``Hyper-Agentic''} Mothers»}. \emph{The Sociological Review} 70 (1):
-92-107. \url{https://doi.org/10.1177/00380261211056169}.
+Murray, M., \& Tizzoni, C. (2022). Raising Children in Hostile Worlds in
+{Santiago} de {Chile}: {Optimism} and {«Hyper-Agentic»} Mothers.
+\emph{The Sociological Review}, \emph{70}(1), 92-107.
+\url{https://doi.org/10.1177/00380261211056169}
 
 \bibitem[\citeproctext]{ref-oyserman2002}
-Oyserman, Daphna, Heather M. Coon, y Markus Kemmelmeier. 2002.
-{«Rethinking Individualism and Collectivism: {Evaluation} of Theoretical
-Assumptions and Meta-Analyses.»} \emph{Psychological Bulletin} 128 (1):
-3-72. \url{https://doi.org/10.1037/0033-2909.128.1.3}.
+Oyserman, D., Coon, H. M., \& Kemmelmeier, M. (2002). Rethinking
+Individualism and Collectivism: {Evaluation} of Theoretical Assumptions
+and Meta-Analyses. \emph{Psychological Bulletin}, \emph{128}(1), 3-72.
+\url{https://doi.org/10.1037/0033-2909.128.1.3}
 
 \bibitem[\citeproctext]{ref-pinheiro2023}
-Pinheiro, Leandro R., Pablo Francisco Di Leo, y Francisco Ramírez
-Varela. 2023. {«{Itinerarios juveniles, individuaci{ó}n y
-reflexividades: aproximaciones a la participaci{ó}n social en barrios
-metropolitanos populares}»}. \emph{Educa{ç}{ã}o e Pesquisa} 49.
-\url{https://doi.org/10.1590/s1678-4634202349270569es}.
+Pinheiro, L. R., Di Leo, P. F., \& Varela, F. R. (2023). {Itinerarios
+juveniles, individuaci{ó}n y reflexividades: aproximaciones a la
+participaci{ó}n social en barrios metropolitanos populares}.
+\emph{Educa{ç}{ã}o e Pesquisa}, \emph{49}.
+\url{https://doi.org/10.1590/s1678-4634202349270569es}
 
 \bibitem[\citeproctext]{ref-pnud2024}
-PNUD. 2024. {«Informe Sobre {Desarrollo Humano} En {Chile} 2024.
+PNUD. (2024). \emph{Informe Sobre {Desarrollo Humano} En {Chile} 2024.
 {\textquestiondown}{Por} Qu{é} Nos Cuesta Cambiar?: Conducir Los Cambios
-Para Un {Desarrollo Humano Sostenible}»}. Santiago de Chile.
+Para Un {Desarrollo Humano Sostenible}}.
 
 \bibitem[\citeproctext]{ref-robles2001}
-Robles, Fernando. 2001. \emph{El Desaliento Inesperado de La Modernidad:
+Robles, F. (2001). \emph{El Desaliento Inesperado de La Modernidad:
 {Molestias}, Irritaciones y Frutos Amargos de La Sociedad Del Riesgo}.
 Sociedad de Hoy.
 
 \bibitem[\citeproctext]{ref-rojas2008}
-Rojas-Méndez, José I., Vilma Coutiño-Hill, Rabi S. Bhagat, y Karen South
-Moustafa. 2008. {«{Evaluaci{ó}n del individualismo y colectivismo
-horizontal y vertical en la sociedad Chilena.}»} \emph{Multidisciplinary
-Business Review} 1 (1): 36-48.
+Rojas-Méndez, J. I., Coutiño-Hill, V., Bhagat, R. S., \& Moustafa, K. S.
+(2008). {Evaluaci{ó}n del individualismo y colectivismo horizontal y
+vertical en la sociedad Chilena.} \emph{Multidisciplinary Business
+Review}, \emph{1}(1), 36-48.
 
 \bibitem[\citeproctext]{ref-salazar-xirinachs_repensar_2023}
-Salazar-Xirinachs, José Manuel. 2023. {«{Repensar, reimaginar,
-transformar: los {``qu{é}''} y los {``c{ó}mo''} para avanzar hacia un
-modelo de desarrollo m{á}s productivo, inclusivo y sostenible}»}.
-\emph{Revista de la CEPAL} 2023 (141): 11-43.
-\url{https://doi.org/10.18356/16820908-2023-141-2}.
+Salazar-Xirinachs, J. M. (2023). {Repensar, reimaginar, transformar: los
+{«qu{é}»} y los {«c{ó}mo»} para avanzar hacia un modelo de desarrollo
+m{á}s productivo, inclusivo y sostenible}. \emph{Revista de la CEPAL},
+\emph{2023}(141), 11-43.
+\url{https://doi.org/10.18356/16820908-2023-141-2}
 
 \bibitem[\citeproctext]{ref-silvapalacios2015}
-Silva Palacios, Vicente. 2015. {«Narrativas de {Individualizaci{ó}n} En
-{Chile}»}. Tesis de \{\{Pregrado\}\}, Universidad de Chile.
+Silva Palacios, V. (2015). \emph{Narrativas de {Individualizaci{ó}n} En
+{Chile}} {[}Tesis de \{\{Pregrado\}\}{]}. Universidad de Chile.
 
 \bibitem[\citeproctext]{ref-solsona-cisternas2023}
-Solsona-Cisternas, Diego Alfredo. 2023. {«Individuation Processes in
-Disabled People. {An} Approach Through Mobilities in Rural Areas of
-Southern {Chile}»}. \emph{Disability \& Society}, 1-23.
-\url{https://doi.org/10.1080/09687599.2023.2263632}.
+Solsona-Cisternas, D. A. (2023). Individuation Processes in Disabled
+People. {An} Approach through Mobilities in Rural Areas of Southern
+{Chile}. \emph{Disability \& Society}, 1-23.
+\url{https://doi.org/10.1080/09687599.2023.2263632}
 
 \bibitem[\citeproctext]{ref-soto2021}
-Soto, Álvaro, Antonio Stecher, y Pamela Frías. 2021.
-{«{\textquestiondown}{Nuevas} Orientaciones Subjetivas En El Trabajo?
-{Los} J{ó}venes de La Industria Del Retail En {Chile}»}. \emph{Athenea
-Digital. Revista de pensamiento e investigaci{ó}n social} 21 (1).
-\url{https://doi.org/10.5565/rev/athenea.2772}.
+Soto, Á., Stecher, A., \& Frías, P. (2021). {\textquestiondown}{Nuevas}
+Orientaciones Subjetivas En El Trabajo? {Los} J{ó}venes de La Industria
+Del Retail En {Chile}. \emph{Athenea Digital. Revista de pensamiento e
+investigaci{ó}n social}, \emph{21}(1).
+\url{https://doi.org/10.5565/rev/athenea.2772}
 
 \bibitem[\citeproctext]{ref-trebilcock2019}
-Trebilcock, Maria Paz, y Alejandra Luneke. 2019. {«Crime {Prevention}
-and the {Coproduction} of {Security}: {Outcomes} of {Citizen
-Participation} at the {Neighborhood Level} in {Neoliberal Chile}»}.
-\emph{Latin American Perspectives} 46 (6): 56-72.
-\url{https://doi.org/10.1177/0094582x18803681}.
+Trebilcock, M. P., \& Luneke, A. (2019). Crime {Prevention} and the
+{Coproduction} of {Security}: {Outcomes} of {Citizen Participation} at
+the {Neighborhood Level} in {Neoliberal Chile}. \emph{Latin American
+Perspectives}, \emph{46}(6), 56-72.
+\url{https://doi.org/10.1177/0094582x18803681}
 
 \bibitem[\citeproctext]{ref-voronov2002}
-Voronov, Maxim, y Jefferson A. Singer. 2002. {«The {Myth} of
-{Individualism-Collectivism}: {A Critical Review}»}. \emph{The Journal
-of Social Psychology} 142 (4): 461-80.
-\url{https://doi.org/10.1080/00224540209603912}.
+Voronov, M., \& Singer, J. A. (2002). The {Myth} of
+{Individualism-Collectivism}: {A Critical Review}. \emph{The Journal of
+Social Psychology}, \emph{142}(4), 461-480.
+\url{https://doi.org/10.1080/00224540209603912}
 
 \bibitem[\citeproctext]{ref-wang2010}
-Wang, Georgette, y Zhong-Bo Liu. 2010. {«What Collective? {Collectivism}
-and Relationalism from a {Chinese} Perspective»}. \emph{Chinese Journal
-of Communication} 3 (1): 42-63.
-\url{https://doi.org/10.1080/17544750903528799}.
+Wang, G., \& Liu, Z.-B. (2010). What Collective? {Collectivism} and
+Relationalism from a {Chinese} Perspective. \emph{Chinese Journal of
+Communication}, \emph{3}(1), 42-63.
+\url{https://doi.org/10.1080/17544750903528799}
 
 \bibitem[\citeproctext]{ref-yoon2010}
-Yoon, Kwang-Il. 2010. {«Political {Culture} of {Individualism} and
-{Collectivism}»}. A \{\{Dissertation\}\} for the \{\{Degree\}\} of
-\{\{Doctor\}\} of \{\{Philosophy\}\} (\{\{Political Science\}\}),
+Yoon, K.-I. (2010). \emph{Political {Culture} of {Individualism} and
+{Collectivism}} {[}A \{\{Dissertation\}\} for the \{\{Degree\}\} of
+\{\{Doctor\}\} of \{\{Philosophy\}\} (\{\{Political Science\}\}){]}.
 Universidad de Michigan.
 
 \bibitem[\citeproctext]{ref-yopo2013}
-Yopo, Martina. 2013. {«{Individualizaci{ó}n en Chile. Individuo y
-sociedad en las transformaciones culturales recientes}»}.
-\emph{Psicoperspectivas. Individuo y Sociedad} 12 (2): 4-15.
-\url{https://doi.org/10.5027/psicoperspectivas-Vol12-Issue2-fulltext-254}.
+Yopo, M. (2013). {Individualizaci{ó}n en Chile. Individuo y sociedad en
+las transformaciones culturales recientes}. \emph{Psicoperspectivas.
+Individuo y Sociedad}, \emph{12}(2), 4-15.
+\url{https://doi.org/10.5027/psicoperspectivas-Vol12-Issue2-fulltext-254}
 
 \bibitem[\citeproctext]{ref-zakrisson2005}
-Zakrisson, Ingrid. 2005. {«Construction of a Short Version of the
-{Right-Wing Authoritarianism} ({RWA}) {Scale}»}. \emph{Personality and
-Individual Differences} 39 (octubre): 863-72.
-\url{https://doi.org/10.1016/j.paid.2005.02.026}.
+Zakrisson, I. (2005). Construction of a Short Version of the {Right-Wing
+Authoritarianism} ({RWA}) {Scale}. \emph{Personality and Individual
+Differences}, \emph{39}, 863-872.
+\url{https://doi.org/10.1016/j.paid.2005.02.026}
 
 \bibitem[\citeproctext]{ref-zhai2022}
-Zhai, Yida. 2022. {«Values {Change} and {Support} for {Democracy} in
-{East Asia}»}. \emph{Social Indicators Research} 160 (1): 179-98.
-\url{https://doi.org/10.1007/s11205-021-02807-3}.
+Zhai, Y. (2022). Values {Change} and {Support} for {Democracy} in {East
+Asia}. \emph{Social Indicators Research}, \emph{160}(1), 179-198.
+\url{https://doi.org/10.1007/s11205-021-02807-3}
 
 \end{CSLReferences}
 

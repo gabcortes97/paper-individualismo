@@ -20,11 +20,11 @@ affiliations:
   - id: 1
     name: Observatorio de Cohesión Social, COES. 
 abstract: |
-  Este artículo busca identificar, a partir de un modelo de clases latentes, los perfiles de individualismo presentes en la sociedad chilena. Se entiende aquí individualismo como el conjunto de concepciones que tratan a la persona como el responsable principal de su propia vida, definiendo el lugar del individuo en la sociedad. Esta conceptuzalización permite comprender el individualismo como un producto de procesos socihistóricos de individuación, que varían no solo entre culturas sino también dentro de una misma sociedad.
-  
-  Utilizando datos secundarios de la 7ma Ola de la Encuesta Mundial de Valores en Chile (2018), se llevó a cabo un Análisis de Clases Latentes. Este análisis reveló cuatro perfiles distintos de individualismo: Autoritario, Conservador, Liberal y Estratégico. Aunque los cuatro perfiles muestran similutdes en sus niveles de independneica e interdependencia, difieren fundamentalmente en las esferas donde la individualidad se considera legítima.
-  
-  Los resultados de esta investigación permiten, por un lado, problematizar la posibilidad de ubicar a la sociedad chilena en un continuo entre individualismo y colectivismo. Por otro, matiza las interpretaciones unívocas sobre la existencia de una forma única de individualismo en Chile. 
+ Este artículo tiene como objetivo identificar, mediante un modelo de clases latentes, los perfiles de individualismo presentes en la sociedad chilena. El individualismo se entiende aquí como el conjunto de concepciones que atribuyen a la persona la responsabilidad principal sobre su propia vida, definiendo al mismo tiempo el lugar del individuo en la sociedad. Esta conceptualización permite abordar el individualismo como resultado de procesos sociohistóricos de individuación, los cuales varían no solo entre culturas, sino también al interior de una misma sociedad.
+
+ A partir de datos secundarios de la séptima ola de la Encuesta Mundial de Valores en Chile (2018), se realizó un Análisis de Clases Latentes que reveló cuatro perfiles de individualismo: autoritario, conservador, liberal y estratégico. Aunque estos perfiles comparten similitudes en sus niveles de independencia e interdependencia, se distinguen fundamentalmente en las esferas donde la individualidad se considera legítima.
+
+ Los resultados de esta investigación permiten, por un lado, cuestionar la idea de que la sociedad chilena pueda ubicarse en un continuo lineal entre individualismo y colectivismo. Por otro, contribuyen a matizar las interpretaciones unívocas que suponen la existencia de una forma homogénea de individualismo en Chile.
 
 keywords: 
   - Individualismo
@@ -32,13 +32,14 @@ keywords:
   - Análisis de clases latentes
 link-citations: true
 linestretch: 1.15       
-# mainfont: Times New Roman
-# fontsize: 12pt          
+mainfont: Times New Roman
+fontsize: 12pt
 geometry: "left=2.54cm,right=2.54cm,top=2.54cm,bottom=2.54cm"
 papersize: letter
 colorlinks: true
 lang: es
 bibliography: "input/bib/tesis.bib"
+csl: "input/bib/apa.csl"
 
 execute:
   echo: false
