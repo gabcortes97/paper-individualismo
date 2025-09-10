@@ -77,7 +77,7 @@ Se seleccionó un modelo de 4 clases a partir de criterios estadísticos y teór
 ```{r}
 #| label: fig-lca
 #| fig-cap: Modelo de clases latentes de individualismo
-#| 
+
 lca4 <- readRDS("output/lca4.rds")
 
 lca4_probs <- tidy(lca4) 
@@ -154,6 +154,147 @@ La edad promedio de este grupo es de 46,3 años, ligeramente superior al promedi
 
 ### Clase 2: Individualistas Conservadores
 
+La clase 2 (19% de la muestra) se caracteriza por una alta probabilidad de justificar la competencia y de legitimar la acción individual en la esfera política, mientras rechaza tanto la acción estratégica como la individualidad en la esfera expresiva. Esto se ve reflejado en las altas probabilidades, mayores que las del resto de los grupos, de rechazar la homosexualidad (100%), el divorcio (79%) y el sexo premarital (82%). 
+
+Pese a compartir este último rasgo con el individualismo autoritario, difieren significativamente en cuanto a la valoración de la acción individual en la esfera política. Por ejemplo, la probabilidad de presentar una alta valoración de los derechos civiles alcanza un 93% entre la clase 2, la más alta entre las cuatros clases, como se aprecia en la @fig-ind-moral.  
+
+```{r}
+#| label: fig-ind-moral
+#| fig-cap: Probabilidad de legitimar acción individual en la esfera política
+
+
+lca4_probs %>% 
+  filter(variable== "Q246" | variable=="Q247" | variable=="Q249",
+         outcome==1) %>%
+  mutate(variable= case_when(variable=="Q246" ~ "Derechos Civiles",
+                             variable=="Q247" ~ "Redistribución Ingresos",
+                             variable=="Q249" ~ "Igualdad de Género"),
+         class= case_when(class==1 ~ "Ind. \nAutoritario",
+                          class==2 ~ "Ind. \nConservador",
+                          class==3 ~ "Ind. \nLiberal",
+                          class==4 ~ "Ind. \nEstratégico")) |>
+  ggplot(aes(x = estimate, y = variable, color = factor(class))) +
+  geom_line(size = 0.8, aes(group = variable), color = "gray30") +  # Añadir líneas entre puntos de la misma práctica
+	geom_point(size = 3) +  # Crear puntos para cada práctica
+	# geom_text_repel(  # Evitar solapamiento de etiquetas
+	# 	aes(label = paste0(round(freq, 1), "%")),
+	# 	size = 3,
+	# 	nudge_x = 5,  # Ajustar posición horizontal
+	# 	direction = "y"
+	# ) +
+	labs(
+		x = "",
+		y = "",
+		color = ""
+	) +
+  scale_x_continuous( labels = scales::label_percent(accuracy = 1),  # 0.62 -> "62%"
+    limits = c(0, 1),                              # opcional si tus datos están en 0–1
+    breaks = seq(0, 1, 0.2)) +
+	theme_minimal() +
+	theme(legend.position = "bottom",
+	      axis.text.x = element_text(size=14),
+        axis.text.y= element_text(size=14),
+	      legend.text= element_text(size=12),
+	      plot.caption = element_text(size=12)
+	      )
+```
+
+
+Es por la mezcla entre el rechazo a una individualidad expresiva pero la valoración de la individualidad política es que se ha denominado a este grupo como **individualismo conservador**. Los individualistas conservadores se caracterizan por tener 47,8 años en promedio, se encuentran políticamente más a la derecha y son mayoritariamente católicos (63%). 
+
 ### Clase 3: Individualistas Liberales
 
+Esta clase, el 27% de la muestra, tiene algunos rasgos similares con el individualismo conservador. Por ejemplo, muestra una alta probabilidad de legitimar la competencia así como la acción individual en la esfera política, mientras rechaza las acciones estratégicas. 
+
+Sin embargo, se diferencia de la variante anterior en dos aspectos principales. Por un lado, en la alta legitimidad otorgada a la individualdad en la esfera expresiva: 76% justifica la homosexualidad, 91% el divorcio y 89% el sexo premarital. Por otro lado, este grupo se destaca como la única clase donde la probabilidad de elegir la libertad es mayor que la de preferir la seguridad (57%). 
+
+
+```{r}
+#| label: fig-ind-expresivo
+#| fig-cap: Probabilidad de legitimar acción individual en la esfera expresiva
+
+
+lca4_probs %>% 
+  filter(variable== "Q182" | variable=="Q185" | variable=="Q186",
+         outcome==1) %>%
+  mutate(variable= case_when(variable=="Q182" ~ "Homosexualidad",
+                             variable=="Q185" ~ "Divorcio",
+                             variable=="Q186" ~ "Sexo premarital"),
+         class= case_when(class==1 ~ "Ind. \nAutoritario",
+                          class==2 ~ "Ind. \nConservador",
+                          class==3 ~ "Ind. \nLiberal",
+                          class==4 ~ "Ind. \nEstratégico")) |>
+  ggplot(aes(x = estimate, y = variable, color = factor(class))) +
+  geom_line(size = 0.8, aes(group = variable), color = "gray30") +  # Añadir líneas entre puntos de la misma práctica
+	geom_point(size = 3) +  # Crear puntos para cada práctica
+	# geom_text_repel(  # Evitar solapamiento de etiquetas
+	# 	aes(label = paste0(round(freq, 1), "%")),
+	# 	size = 3,
+	# 	nudge_x = 5,  # Ajustar posición horizontal
+	# 	direction = "y"
+	# ) +
+	labs(
+		x = "",
+		y = "",
+		color = ""
+	) +
+  scale_x_continuous( labels = scales::label_percent(accuracy = 1),  # 0.62 -> "62%"
+    limits = c(0, 1),                              # opcional si tus datos están en 0–1
+    breaks = seq(0, 1, 0.2)) +
+	theme_minimal() +
+	theme(legend.position = "bottom",
+	      axis.text.x = element_text(size=14),
+        axis.text.y= element_text(size=14),
+	      legend.text= element_text(size=12),
+	      plot.caption = element_text(size=12)
+	      )
+```
+
+De tal modo, se ha denominado a esta clase como **individualismo liberal**, pues, sus valores apuntan al respeto a la libertad y a la tolerancia  de la acción individual en todas las esferas de la vida social, aunque manteniendo el respeto por algunas normas básicas de convivencia. Los individualistas liberales tiene una mayor proporción de personas en la izquierda y centro izquierda del espectro político (28%), pero también es el que alberga la mayor cantidad de personas sin identificación política. Por otro lado, en contraste con las dos clases anteriores, este grupo es menores religioso, con un 36% de sus miembros declarando no tener afiliación religiosa. 
+
 ### Clase 4: Individualistas Estratégicos
+
+Finalmente, la clase 4 (25% de la muestra) se caracteriza por ser el único perfil en donde se observa una alta probabilidad de legitimar la acción individual en todas las esferas, incluso si esto implica transgredir las normas sociales, como se aprecia en la @fig-ind-econ. Por esta razón, se ha decidio denominar a este perfil como **individualismo estratégico**.
+
+```{r}
+#| label: fig-ind-econ
+#| fig-cap: Probabilidad de legitimar acción individual en la esfera económica
+
+
+lca4_probs %>% 
+  filter(variable== "Q109" | variable=="Q177" | variable=="Q178",
+         outcome==1) %>%
+  mutate(variable= case_when(variable=="Q109" ~ "Competencia",
+                             variable=="Q177" ~ "Recibe beneficios",
+                             variable=="Q178" ~ "Evade Transporte Público"),
+         class= case_when(class==1 ~ "Ind. \nAutoritario",
+                          class==2 ~ "Ind. \nConservador",
+                          class==3 ~ "Ind. \nLiberal",
+                          class==4 ~ "Ind. \nEstratégico")) |>
+  ggplot(aes(x = estimate, y = variable, color = factor(class))) +
+  geom_line(size = 0.8, aes(group = variable), color = "gray30") +  # Añadir líneas entre puntos de la misma práctica
+	geom_point(size = 3) +  # Crear puntos para cada práctica
+	# geom_text_repel(  # Evitar solapamiento de etiquetas
+	# 	aes(label = paste0(round(freq, 1), "%")),
+	# 	size = 3,
+	# 	nudge_x = 5,  # Ajustar posición horizontal
+	# 	direction = "y"
+	# ) +
+	labs(
+		x = "",
+		y = "",
+		color = ""
+	) +
+  scale_x_continuous( labels = scales::label_percent(accuracy = 1),  # 0.62 -> "62%"
+    limits = c(0, 1),                              # opcional si tus datos están en 0–1
+    breaks = seq(0, 1, 0.2)) +
+	theme_minimal() +
+	theme(legend.position = "bottom",
+	      axis.text.x = element_text(size=14),
+        axis.text.y= element_text(size=14),
+	      legend.text= element_text(size=12),
+	      plot.caption = element_text(size=12)
+	      )
+```
+
+De los cuatro perfiles, este es el único donde se observan diferencias en la composición de género, mostrando una leve feminización (56%). Además, es el grupo más joven, con una edad promedio de 40,3 años. Comparte con el individualismo liberal una baja identificación religiosa, ya que el 37% de sus miembros declara no tener una religión. 

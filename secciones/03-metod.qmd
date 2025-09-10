@@ -44,9 +44,9 @@ El indicador seleccionado consisnte en la pregunta *la mayoría de las personas 
 tab3 <- data.frame(Dimensión=c(rep("Legitimidad individualismo utilitario", 6),
                                     rep("Legitimidad individualismo moral", 6),
                                     rep("Legitimidad individualismo expresivo", 6),
-                                    rep("Concepción Independiente",2),
-                                    rep("Concepción Relacional",4),
-                                    rep("Concepción Colectiva",4),
+                                    rep("Representación Independiente",2),
+                                    rep("Representación Relacional",4),
+                                    rep("Representación Colectiva",4),
                                     rep("Valor principal",2)),
                    Indicadores=c(rep("La competencia es buena o perjudicial",2),
                                  rep("Evitar el pago de pasaje en el transporte público",2),
@@ -98,16 +98,16 @@ create_table3 <- function(df) {
     library(flextable)
     df2 <- df |>
       dplyr::mutate(
-        concepto = c(rep("Legitimidad de la Individualidad", 18),
-                     rep("Concepciones del Individuo", 10),
+        Concepto = c(rep("Legitimidad de la Individualidad", 18),
+                     rep("Representaciones del Individuo", 10),
                      rep("Valores e Imperativos", 2))
       ) |>
-      dplyr::relocate(concepto, .before = 1)
+      dplyr::relocate(Concepto, .before = 1)
 
     flextable::regulartable(df2) |>
-      flextable::merge_v(j = c("concepto", "Dimensión", "Indicadores")) |>
-      flextable::align(j = "concepto", align = "left", part = "body") |>
-      flextable::bold(j = "concepto", part = "body") |>
+      flextable::merge_v(j = c("Concepto", "Dimensión", "Indicadores")) |>
+      flextable::align(j = "Concepto", align = "left", part = "body") |>
+      flextable::bold(j = "Concepto", part = "body") |>
       flextable::set_table_properties(layout = "autofit") |>
       flextable::font(fontname = "Helvetica", part = "all") |>
       flextable::fontsize(size = 11, part = "all") |>
@@ -137,10 +137,6 @@ create_table3 <- function(df) {
 create_table3(tab3)
 
 ```
-
-### Variables sociodemográficas
-
-Se incluirán indicadores sociodemográficos tales como posición política, sexo, edad e identificación religiosa con el objetivo de observar si existen diferencias en la composición de los perfiles de individualismo identificados. 
 
 ## Método
 
