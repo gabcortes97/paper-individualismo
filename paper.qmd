@@ -1,5 +1,6 @@
 ---
-title: "Perfiles de Individualismo en la sociedad chilena"
+title: "Más Allá del Continuo Individualismo-Colectivismo: Perfiles de Individualismo en la Sociedad Chilena"
+subtitle: "Beyond the Individualism-Collectivism Continuum: Profiles of Individualism in Chilean Society"
 format:
   html:
     theme: cosmo
@@ -8,6 +9,9 @@ format:
      keep-tex: true
      fig-pos: H
      mainfont: "TeX Gyre Termes"
+  docx:
+     reference-doc: custom-reference-doc.docx
+     
 author:
   - name: Gabriel Cortés Paredes
     email: gabriel.cortes@uchile.cl
@@ -56,7 +60,8 @@ p_load(tidyverse,
        stargazer,
        broom,
        stringr,
-       car)
+       car,
+       flextable)
 
 
 # Función para crear tablas word

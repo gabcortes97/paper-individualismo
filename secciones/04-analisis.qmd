@@ -266,7 +266,7 @@ lca4_probs %>%
          outcome==1) %>%
   mutate(variable= case_when(variable=="Q109" ~ "Competencia",
                              variable=="Q177" ~ "Recibe beneficios",
-                             variable=="Q178" ~ "Evade Transporte Público"),
+                             variable=="Q178" ~ "Evade \nTransporte Público"),
          class= case_when(class==1 ~ "Ind. \nAutoritario",
                           class==2 ~ "Ind. \nConservador",
                           class==3 ~ "Ind. \nLiberal",

@@ -14,9 +14,9 @@ lca4_probs %>%
   filter(variable %in% c("Q27","Q257","Q48")) %>%
   mutate(
     variable = case_when(
-      variable == "Q27"  ~ "Representación Relacional",
-      variable == "Q257" ~ "Representación Colectiva",
-      variable == "Q48" ~ "Representación Independiente"
+      variable == "Q27"  ~ "Representación \nRelacional",
+      variable == "Q257" ~ "Representación \nColectiva",
+      variable == "Q48" ~ "Representación \nIndependiente"
     ),
     class = case_when(
       class == 1 ~ "Ind. \nAutoritario",

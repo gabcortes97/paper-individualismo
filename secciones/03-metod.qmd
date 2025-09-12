@@ -92,49 +92,54 @@ tab3 <- data.frame(Dimensión=c(rep("Legitimidad individualismo utilitario", 6),
                                  "1. La Libertad",
                                  "2. La seguridad"))
 
-create_table3 <- function(df) {
-  if (is_word_output()) {
-    # --- rama Word (flextable) ---
-    library(flextable)
-    df2 <- df |>
-      dplyr::mutate(
-        Concepto = c(rep("Legitimidad de la Individualidad", 18),
-                     rep("Representaciones del Individuo", 10),
-                     rep("Valores e Imperativos", 2))
-      ) |>
-      dplyr::relocate(Concepto, .before = 1)
+df2 <- tab3 |>
+  mutate(
+    Concepto = c(
+      rep("Legitimidad de la Individualidad", 18),
+      rep("Representaciones del Individuo", 10),
+      rep("Valores e Imperativos", 2)
+    )
+  ) |>
+  relocate(Concepto, .before = 1)
 
-    flextable::regulartable(df2) |>
-      flextable::merge_v(j = c("Concepto", "Dimensión", "Indicadores")) |>
-      flextable::align(j = "Concepto", align = "left", part = "body") |>
-      flextable::bold(j = "Concepto", part = "body") |>
-      flextable::set_table_properties(layout = "autofit") |>
-      flextable::font(fontname = "Helvetica", part = "all") |>
-      flextable::fontsize(size = 11, part = "all") |>
-      flextable::set_caption("Resumen indicadores") |>
-      flextable::fix_border_issues(part = "all")
-  } else {
-    kableExtra::kable(df, booktabs = TRUE, escape = FALSE) |>
-      kableExtra::row_spec(0, align = "c") |>
-      kableExtra::kable_classic(full_width = FALSE,
-                                html_font = "Helvetica",
-                                font_size = 10,
-                                latex_options = "hold_position") |>
-      kableExtra::column_spec(1, width = "3cm") |>
-      kableExtra::column_spec(2, width = "8cm") |>
-      kableExtra::column_spec(3, width = "3cm") |>
-      # 👇 Mover collapse_rows ANTES de pack_rows
-      kableExtra::collapse_rows(columns = 1:2, valign = "middle") |>
-      kableExtra::pack_rows(
-        index = c("Legitimidad de la individualidad" = 18,
-                  "Concepciones del Individuo" = 10,
-                  "Valores e imperativos" = 2),
-        latex_align = "l", indent = FALSE
-      )
-  }
-}
+# --- Objeto FLEXLABLE (para Word)
+ft <- flextable::regulartable(df2) |>
+  flextable::merge_v(j = c("Concepto", "Dimensión", "Indicadores")) |>
+  flextable::align(j = "Concepto", align = "left", part = "body") |>
+  flextable::bold(j = "Concepto", part = "body") |>
+  flextable::set_table_properties(layout = "autofit") |>
+  flextable::fontsize(size = 11, part = "all") |>
+  flextable::set_caption("Resumen de indicadores") |>
+  flextable::fix_border_issues(part = "all")
+# Si tienes instalada Helvetica en el sistema:
+# ft <- flextable::font(ft, fontname = "Helvetica", part = "all")
 
-create_table3(tab3)
+# --- Objeto KABLE (para HTML/PDF)
+# kb <- kableExtra::kable(df, booktabs = TRUE, escape = FALSE) |>
+#   kableExtra::row_spec(0, align = "c") |>
+#   kableExtra::kable_classic(
+#     full_width   = FALSE,
+#     html_font    = "Helvetica",   # aplica en HTML
+#     font_size    = 10,
+#     latex_options = "hold_position"
+#   ) |>
+#   kableExtra::column_spec(1, width = "3cm") |>
+#   kableExtra::column_spec(2, width = "8cm") |>
+#   kableExtra::column_spec(3, width = "3cm") |>
+#   # Primero colapsa filas (asumiendo que tus 1ª y 2ª columnas son Dimensión e Indicadores)
+#   kableExtra::collapse_rows(columns = 1:2, valign = "middle") |>
+#   # Luego “secciones” por bloques (mismos tamaños que arriba)
+#   kableExtra::pack_rows(
+#     index = c(
+#       "Legitimidad de la Individualidad" = 18,
+#       "Representaciones del Individuo"   = 10,
+#       "Valores e Imperativos"            = 2
+#     ),
+#     latex_align = "l",
+#     indent = FALSE
+#   )
+
+save_as_docx(ft, path="output/tab-indicadores.docx")
 
 ```
 
